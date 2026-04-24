@@ -1,0 +1,16 @@
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+xgboost==3.2.0
+statsmodels==0.14.6
+streamlit==1.56.0
+plotly==6.7.0
+boto3==1.42.95
+botocore==1.42.95
+pydantic-settings==2.14.0
+pydantic==2.13.3
+structlog==24.2.0
+scipy==1.17.1
+pyarrow==24.0.0
+fastapi==0.115.0
+uvicorn[standard]==0.30.6

@@ -1,0 +1,58 @@
+# version: "3.9"
+
+services:
+  # ─── FastAPI Backend ──────────────────────────────────────────────────────
+  eyewear-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    environment:
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_BEDROCK_MODEL_ID=${AWS_BEDROCK_MODEL_ID:-anthropic.claude-3-sonnet-20240229-v1:0}
+      - MOCK_BEDROCK=${MOCK_BEDROCK:-true}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - BEDROCK_BEARER_TOKEN=${BEDROCK_BEARER_TOKEN:-}
+    volumes:
+      - ./models/artifacts:/app/models/artifacts
+      - ./data/synthetic:/app/data/synthetic
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ─── Vanilla JS Frontend (nginx) ───────────────────────────────────────────
+  eyewear-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - eyewear-api
+    restart: unless-stopped
+
+  # ─── Legacy Streamlit (optional) ─────────────────────────────────────────
+  eyewear-streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_BEDROCK_MODEL_ID=${AWS_BEDROCK_MODEL_ID:-anthropic.claude-3-sonnet-20240229-v1:0}
+      - MOCK_BEDROCK=${MOCK_BEDROCK:-true}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - BEDROCK_BEARER_TOKEN=${BEDROCK_BEARER_TOKEN:-}
+    volumes:
+      - ./models/artifacts:/app/models/artifacts
+      - ./data/synthetic:/app/data/synthetic
+    restart: unless-stopped
+    profiles:
+      - legacy

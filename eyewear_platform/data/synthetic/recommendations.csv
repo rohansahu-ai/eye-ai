@@ -1,0 +1,214 @@
+sku_id,name,frame_shape,material,color,price_point,current_stock,projected_demand_90d,gap,recommended_qty,urgency_score,urgency_band,estimated_cost_usd,estimated_margin_usd,margin_pct,preferred_supplier,supplier_risk_band,lead_time_days,demand_signal_drivers,similar_alternatives,confidence_score
+SKU0187,Titanium Square 187,oval,stainless_steel,tortoise,mid,2617,158.03,0.0,113,0.4613,medium,8469.35,10805.09,58.7,SUP021,medium,30,"['high_velocity', 'supplier_risk']","['SKU0107', 'SKU0127', 'SKU0198']",0.9228
+SKU0001,Acetate Rectangle 1,oval,tr90,rose_gold,premium,2478,28.99,0.0,105,0.4045,medium,16134.3,27508.01,65.5,SUP002,medium,53,"['high_velocity', 'supplier_risk']","['SKU0037', 'SKU0178', 'SKU0226']",0.9132
+SKU0055,Stainless_Steel Aviator 55,oval,aluminium,brown,premium,3868,141.05,0.0,111,0.3396,medium,17108.43,21082.96,57.9,SUP003,medium,56,"['high_velocity', 'supplier_risk']","['SKU0040', 'SKU0156', 'SKU0010']",0.8656
+SKU0185,Stainless_Steel Oversized 185,square,stainless_steel,red,premium,2124,23.03,0.0,102,0.3365,medium,11807.52,12875.96,55.3,SUP016,medium,82,['high_velocity'],"['SKU0105', 'SKU0193', 'SKU0267']",0.8535
+SKU0272,Wood Wayfarer 272,cat_eye,aluminium,tortoise,budget,1826,130.8,0.0,95,0.3237,medium,2639.1,6736.07,74.5,SUP017,medium,45,['standard_replenishment'],"['SKU0071', 'SKU0207', 'SKU0218']",0.8226
+SKU0126,Aluminium Oversized 126,oversized,aluminium,red,mid,2945,113.75,0.0,106,0.3075,medium,6136.34,15699.5,74.2,SUP004,high,94,"['high_velocity', 'supplier_risk']","['SKU0201', 'SKU0162', 'SKU0045']",0.8565
+SKU0248,Titanium Rectangle 248,aviator,aluminium,silver,mid,3551,114.32000000000001,0.0,115,0.2947,medium,5797.15,8262.72,61.3,SUP014,low,59,['high_velocity'],"['SKU0034', 'SKU0007', 'SKU0102']",0.8911
+SKU0103,Wood Oval 103,aviator,acetate,gold,budget,2588,93.63,0.0,88,0.2895,medium,2589.84,5823.78,71.9,SUP018,medium,47,"['high_velocity', 'supplier_risk']","['SKU0136', 'SKU0070', 'SKU0119']",0.7913
+SKU0133,Titanium Rectangle 133,oval,titanium,rose_gold,mid,3233,50.39,0.0,97,0.2885,medium,5566.83,13193.64,72.8,SUP021,medium,30,"['high_velocity', 'supplier_risk']","['SKU0171', 'SKU0175', 'SKU0217']",0.8171
+SKU0246,Acetate Rectangle 246,oval,tr90,rose_gold,premium,579,4.609999999999999,0.0,58,0.288,medium,8986.52,7360.05,57.2,SUP025,high,57,['supplier_risk'],"['SKU0074', 'SKU0001', 'SKU0019']",0.6968
+SKU0077,Titanium Wayfarer 77,aviator,tr90,silver,budget,2360,212.26,0.0,105,0.2835,medium,5253.15,5866.86,56.7,SUP006,medium,49,['standard_replenishment'],"['SKU0108', 'SKU0125', 'SKU0136']",0.7963
+SKU0117,Aluminium Rectangle 117,square,tr90,silver,premium,2801,28.150000000000002,0.0,92,0.277,medium,9528.44,14959.42,63.8,SUP008,medium,87,['high_velocity'],"['SKU0192', 'SKU0170', 'SKU0151']",0.8391
+SKU0171,Titanium Aviator 171,square,titanium,rose_gold,budget,3518,71.66,0.0,98,0.2768,medium,2288.3,4758.9,70.2,SUP021,medium,30,"['high_velocity', 'supplier_risk']","['SKU0175', 'SKU0217', 'SKU0133']",0.7895
+SKU0232,Aluminium Rectangle 232,wayfarer,acetate,gold,mid,2314,49.97,0.0,96,0.2629,medium,7330.56,11229.79,63.9,SUP005,medium,62,['supplier_risk'],"['SKU0278', 'SKU0102', 'SKU0099']",0.7958
+SKU0165,Tr90 Cat Eye 165,wayfarer,stainless_steel,rose_gold,mid,2423,21.67,0.0,92,0.2622,medium,7786.88,8920.31,56.6,SUP021,medium,30,"['high_velocity', 'supplier_risk']","['SKU0180', 'SKU0018', 'SKU0069']",0.803
+SKU0028,Wood Cat Eye 28,square,titanium,gold,budget,619,53.190000000000005,0.0,55,0.2546,medium,1281.5,2387.61,73.3,SUP025,high,57,['supplier_risk'],"['SKU0068', 'SKU0050', 'SKU0059']",0.6972
+SKU0016,Acetate Rectangle 16,cat_eye,aluminium,rose_gold,budget,2777,52.45,0.0,101,0.2522,medium,2921.93,3861.02,60.3,SUP003,medium,56,['supplier_risk'],"['SKU0260', 'SKU0139', 'SKU0060']",0.7905
+SKU0178,Aluminium Oval 178,round,tr90,clear,luxury,673,17.12,0.0,59,0.2504,medium,15465.08,28151.74,71.7,SUP009,medium,78,['standard_replenishment'],"['SKU0025', 'SKU0001', 'SKU0252']",0.7141
+SKU0074,Wood Rectangle 74,oval,tr90,black,budget,3704,68.83,0.0,106,0.2495,low,2978.6,4136.57,61.0,SUP024,low,52,['high_velocity'],"['SKU0246', 'SKU0052', 'SKU0125']",0.8167
+SKU0174,Titanium Oval 174,round,aluminium,tortoise,luxury,2922,25.490000000000002,0.0,98,0.2453,low,24437.28,29561.55,58.0,SUP009,medium,78,['standard_replenishment'],"['SKU0253', 'SKU0039', 'SKU0006']",0.7863
+SKU0009,Tr90 Round 9,square,acetate,brown,budget,2880,106.32000000000001,0.0,100,0.2435,low,2722.0,3573.09,60.3,SUP003,medium,56,['supplier_risk'],"['SKU0213', 'SKU0047', 'SKU0065']",0.772
+SKU0286,Tr90 Aviator 286,cat_eye,titanium,rose_gold,mid,2164,67.73,0.0,92,0.2379,low,6048.08,10694.57,67.5,SUP017,medium,45,['standard_replenishment'],"['SKU0274', 'SKU0147', 'SKU0262']",0.7836
+SKU0157,Aluminium Rectangle 157,oval,wood,brown,budget,711,68.62,0.0,60,0.2377,low,2250.0,3913.36,68.4,SUP014,low,59,['standard_replenishment'],"['SKU0190', 'SKU0096', 'SKU0208']",0.7423
+SKU0082,Wood Cat Eye 82,oval,wood,black,mid,3308,121.2,0.0,97,0.2359,low,6808.43,14098.04,71.0,SUP007,medium,54,['supplier_risk'],"['SKU0198', 'SKU0264', 'SKU0087']",0.7324
+SKU0115,Tr90 Aviator 115,round,tr90,green,budget,837,44.47,0.0,64,0.2355,low,1356.8,1486.79,59.3,SUP009,medium,78,['standard_replenishment'],"['SKU0060', 'SKU0294', 'SKU0108']",0.717
+SKU0290,Titanium Cat Eye 290,wayfarer,aluminium,clear,budget,2465,94.32,0.0,103,0.2341,low,2062.06,2741.04,61.3,SUP001,medium,63,['standard_replenishment'],"['SKU0195', 'SKU0058', 'SKU0253']",0.7756
+SKU0138,Aluminium Rectangle 138,cat_eye,tr90,navy,mid,3289,118.87,0.0,100,0.2335,low,5761.0,11313.91,69.0,SUP014,low,59,['high_velocity'],"['SKU0041', 'SKU0250', 'SKU0291']",0.8002
+SKU0239,Tr90 Oversized 239,oversized,tr90,red,budget,2916,116.73,0.0,86,0.2298,low,1769.02,2937.89,66.6,SUP025,high,57,['supplier_risk'],"['SKU0202', 'SKU0270', 'SKU0149']",0.7025
+SKU0179,Aluminium Square 179,wayfarer,stainless_steel,red,premium,3023,133.99,0.0,102,0.2236,low,16864.68,21031.76,59.5,SUP002,medium,53,['supplier_risk'],"['SKU0110', 'SKU0045', 'SKU0256']",0.7616
+SKU0088,Wood Round 88,wayfarer,wood,red,mid,2823,85.85,0.0,104,0.2173,low,11196.64,12357.74,55.8,SUP011,medium,59,['standard_replenishment'],"['SKU0288', 'SKU0045', 'SKU0087']",0.8041
+SKU0100,Aluminium Cat Eye 100,round,wood,green,luxury,731,56.39,0.0,59,0.2159,low,14801.92,24840.32,69.0,SUP009,medium,78,['standard_replenishment'],"['SKU0054', 'SKU0168', 'SKU0026']",0.7121
+SKU0148,Aluminium Round 148,oval,tr90,red,mid,3742,164.56,0.0,104,0.2151,low,6976.32,11282.43,66.4,SUP023,high,37,['supplier_risk'],"['SKU0300', 'SKU0045', 'SKU0001']",0.7013
+SKU0163,Wood Rectangle 163,wayfarer,aluminium,navy,budget,2684,62.4,0.0,93,0.2137,low,2804.88,6714.74,74.0,SUP004,high,94,['supplier_risk'],"['SKU0079', 'SKU0040', 'SKU0297']",0.7402
+SKU0081,Tr90 Round 81,cat_eye,wood,green,premium,3087,33.25,0.0,107,0.2104,low,10943.96,25815.04,73.7,SUP010,high,76,['supplier_risk'],"['SKU0090', 'SKU0166', 'SKU0123']",0.7645
+SKU0240,Aluminium Oversized 240,aviator,wood,red,budget,2449,106.71000000000001,0.0,95,0.21,low,3639.45,5797.93,64.7,SUP012,medium,76,['standard_replenishment'],"['SKU0085', 'SKU0140', 'SKU0146']",0.7949
+SKU0284,Titanium Wayfarer 284,aviator,titanium,rose_gold,budget,1405,44.02,0.0,61,0.2082,low,1632.36,2684.56,65.6,SUP017,medium,45,['standard_replenishment'],"['SKU0091', 'SKU0036', 'SKU0098']",0.733
+SKU0053,Acetate Aviator 53,oval,acetate,rose_gold,premium,3639,105.55,0.0,100,0.2071,low,15036.0,20864.96,61.6,SUP012,medium,76,['standard_replenishment'],"['SKU0214', 'SKU0191', 'SKU0235']",0.7473
+SKU0261,Titanium Oval 261,cat_eye,acetate,navy,budget,1278,44.84,0.0,66,0.2034,low,1469.16,1810.05,60.2,SUP023,high,37,['supplier_risk'],"['SKU0209', 'SKU0063', 'SKU0142']",0.7113
+SKU0105,Tr90 Oval 105,square,stainless_steel,red,premium,4220,47.04,0.0,103,0.2016,low,15769.3,29912.94,69.3,SUP009,medium,78,['standard_replenishment'],"['SKU0185', 'SKU0005', 'SKU0153']",0.7013
+SKU0143,Tr90 Cat Eye 143,cat_eye,stainless_steel,red,luxury,626,41.34,0.0,57,0.2005,low,24428.49,22646.89,57.7,SUP022,medium,70,['standard_replenishment'],"['SKU0189', 'SKU0015', 'SKU0012']",0.699
+SKU0299,Titanium Round 299,rectangle,titanium,silver,premium,649,71.04,0.0,55,0.1979,low,7824.85,15840.87,71.3,SUP019,medium,67,['standard_replenishment'],"['SKU0137', 'SKU0007', 'SKU0129']",0.7415
+SKU0156,Acetate Aviator 156,oval,aluminium,silver,premium,967,86.17,0.0,67,0.1974,low,5861.16,10180.39,70.4,SUP011,medium,59,['standard_replenishment'],"['SKU0055', 'SKU0226', 'SKU0001']",0.7096
+SKU0218,Stainless_Steel Rectangle 218,cat_eye,aluminium,clear,budget,2327,154.24,0.0,94,0.1968,low,3424.42,5257.05,64.3,SUP019,medium,67,['standard_replenishment'],"['SKU0220', 'SKU0272', 'SKU0141']",0.7783
+SKU0085,Stainless_Steel Oversized 85,round,wood,red,budget,559,49.0,0.0,55,0.1957,low,1582.9,1686.5,62.3,SUP016,medium,82,['standard_replenishment'],"['SKU0021', 'SKU0005', 'SKU0039']",0.6938
+SKU0273,Wood Aviator 273,square,wood,clear,budget,911,61.2,0.0,65,0.1863,low,2427.75,2274.09,55.4,SUP011,medium,59,['standard_replenishment'],"['SKU0140', 'SKU0026', 'SKU0029']",0.7112
+SKU0056,Titanium Oval 56,cat_eye,stainless_steel,rose_gold,premium,2419,53.79,0.0,94,0.186,low,11436.04,20631.23,68.0,SUP022,medium,70,['standard_replenishment'],"['SKU0260', 'SKU0018', 'SKU0143']",0.7667
+SKU0079,Wood Oval 79,wayfarer,aluminium,navy,mid,2893,96.98,0.0,97,0.1855,low,4560.94,10217.96,72.3,SUP019,medium,67,['standard_replenishment'],"['SKU0163', 'SKU0040', 'SKU0297']",0.7591
+SKU0184,Stainless_Steel Oversized 184,aviator,titanium,green,mid,2877,135.71,0.0,91,0.1855,low,5438.16,7919.45,62.9,SUP019,medium,67,['standard_replenishment'],"['SKU0034', 'SKU0113', 'SKU0007']",0.7449
+SKU0030,Stainless_Steel Aviator 30,oversized,aluminium,clear,premium,784,4.73,0.0,53,0.1832,low,7005.01,8064.66,59.0,SUP025,high,57,['supplier_risk'],"['SKU0202', 'SKU0233', 'SKU0046']",0.7052
+SKU0092,Titanium Square 92,cat_eye,tr90,brown,premium,1139,95.89,0.0,62,0.1777,low,7467.28,7998.54,57.1,SUP007,medium,54,['supplier_risk'],"['SKU0012', 'SKU0143', 'SKU0202']",0.6966
+SKU0298,Wood Square 298,oversized,tr90,black,premium,2758,110.41,0.0,99,0.1773,low,11743.38,24071.8,71.0,SUP022,medium,70,['standard_replenishment'],"['SKU0017', 'SKU0109', 'SKU0162']",0.7543
+SKU0015,Wood Round 15,cat_eye,stainless_steel,green,mid,885,18.919999999999998,0.0,58,0.1772,low,2991.06,5306.18,69.2,SUP023,high,37,['supplier_risk'],"['SKU0143', 'SKU0056', 'SKU0080']",0.6933
+SKU0213,Tr90 Oval 213,round,acetate,brown,budget,1653,13.69,0.0,66,0.1758,low,1595.88,1599.07,55.1,SUP004,high,94,['supplier_risk'],"['SKU0009', 'SKU0164', 'SKU0048']",0.6774
+SKU0282,Aluminium Aviator 282,oval,wood,gold,budget,791,53.76,0.0,58,0.1736,low,1872.82,2052.91,63.0,SUP003,medium,56,['supplier_risk'],"['SKU0269', 'SKU0037', 'SKU0048']",0.6772
+SKU0167,Aluminium Wayfarer 167,square,tr90,brown,premium,1002,66.19,0.0,63,0.1733,low,7472.43,14950.16,71.2,SUP010,high,76,['supplier_risk'],"['SKU0031', 'SKU0002', 'SKU0047']",0.7196
+SKU0094,Stainless_Steel Round 94,wayfarer,titanium,silver,mid,886,13.67,0.0,58,0.1715,low,3822.78,6659.9,68.5,SUP018,medium,47,['supplier_risk'],"['SKU0097', 'SKU0059', 'SKU0004']",0.7081
+SKU0011,Titanium Oval 11,round,tr90,navy,mid,867,22.080000000000002,0.0,58,0.1714,low,3809.44,4924.05,63.9,SUP007,medium,54,['supplier_risk'],"['SKU0032', 'SKU0042', 'SKU0054']",0.6902
+SKU0192,Wood Oval 192,square,tr90,tortoise,budget,2098,108.61999999999999,0.0,90,0.1698,low,2856.6,4776.88,66.7,SUP011,medium,59,['standard_replenishment'],"['SKU0068', 'SKU0093', 'SKU0117']",0.7509
+SKU0196,Aluminium Wayfarer 196,wayfarer,tr90,gold,budget,2666,182.25,0.0,101,0.1694,low,2852.24,5026.87,68.1,SUP001,medium,63,['standard_replenishment'],"['SKU0022', 'SKU0250', 'SKU0024']",0.7464
+SKU0004,Stainless_Steel Square 4,oversized,titanium,brown,premium,1425,83.94,0.0,60,0.169,low,8952.6,10963.58,60.6,SUP007,medium,54,['supplier_risk'],"['SKU0219', 'SKU0019', 'SKU0042']",0.6518
+SKU0283,Wood Rectangle 283,oversized,titanium,navy,budget,804,52.21,0.0,58,0.1665,low,1454.06,1387.92,56.3,SUP009,medium,78,['standard_replenishment'],"['SKU0175', 'SKU0122', 'SKU0073']",0.6975
+SKU0084,Wood Square 84,wayfarer,aluminium,navy,budget,2649,138.22,0.0,97,0.1657,low,2761.59,4433.04,65.9,SUP022,medium,70,['standard_replenishment'],"['SKU0061', 'SKU0052', 'SKU0098']",0.7426
+SKU0198,Acetate Oversized 198,oval,stainless_steel,black,premium,1045,60.84,0.0,63,0.1641,low,7250.04,13161.92,71.7,SUP025,high,57,['supplier_risk'],"['SKU0082', 'SKU0107', 'SKU0127']",0.6833
+SKU0048,Stainless_Steel Wayfarer 48,oval,acetate,brown,budget,2458,150.23,0.0,102,0.1631,low,2438.82,3670.98,64.7,SUP014,low,59,['standard_replenishment'],"['SKU0051', 'SKU0164', 'SKU0230']",0.7455
+SKU0168,Stainless_Steel Wayfarer 168,round,titanium,green,premium,2371,96.41,0.0,90,0.1605,low,11188.8,26787.82,74.4,SUP012,medium,76,['standard_replenishment'],"['SKU0131', 'SKU0100', 'SKU0108']",0.7333
+SKU0104,Tr90 Round 104,cat_eye,aluminium,red,luxury,1158,41.1,0.0,57,0.1602,low,13983.24,14725.62,57.5,SUP007,medium,54,['supplier_risk'],"['SKU0071', 'SKU0023', 'SKU0132']",0.6637
+SKU0255,Acetate Round 255,wayfarer,stainless_steel,rose_gold,budget,990,20.28,0.0,57,0.1584,low,885.78,1666.83,70.8,SUP018,medium,47,['supplier_risk'],"['SKU0018', 'SKU0210', 'SKU0260']",0.6781
+SKU0271,Wood Oversized 271,wayfarer,wood,black,budget,1032,6.18,0.0,65,0.1581,low,1909.7,2240.57,60.1,SUP005,medium,62,['supplier_risk'],"['SKU0269', 'SKU0181', 'SKU0029']",0.6997
+SKU0132,Acetate Cat Eye 132,cat_eye,wood,clear,luxury,763,31.06,0.0,56,0.1579,low,15160.32,31955.52,74.0,SUP013,medium,52,['standard_replenishment'],"['SKU0023', 'SKU0140', 'SKU0100']",0.695
+SKU0281,Aluminium Cat Eye 281,aviator,aluminium,clear,budget,865,46.35,0.0,58,0.1575,low,1634.44,2621.92,66.8,SUP021,medium,30,['supplier_risk'],"['SKU0234', 'SKU0029', 'SKU0140']",0.7071
+SKU0018,Stainless_Steel Rectangle 18,wayfarer,stainless_steel,rose_gold,budget,1442,57.78,0.0,71,0.1573,low,2221.59,3626.8,68.1,SUP007,medium,54,['supplier_risk'],"['SKU0153', 'SKU0255', 'SKU0165']",0.6811
+SKU0262,Acetate Rectangle 262,cat_eye,titanium,brown,premium,638,57.71,0.0,54,0.1545,low,6652.26,5211.49,60.4,SUP015,medium,84,['standard_replenishment'],"['SKU0274', 'SKU0286', 'SKU0023']",0.6572
+SKU0289,Stainless_Steel Oversized 289,wayfarer,tr90,tortoise,mid,884,17.03,0.0,65,0.1545,low,2661.75,4584.25,71.7,SUP008,medium,87,['standard_replenishment'],"['SKU0288', 'SKU0045', 'SKU0087']",0.6895
+SKU0228,Wood Aviator 228,cat_eye,acetate,navy,mid,1267,44.36,0.0,62,0.1534,low,4581.18,9027.66,70.4,SUP024,low,52,['standard_replenishment'],"['SKU0065', 'SKU0238', 'SKU0261']",0.7252
+SKU0031,Stainless_Steel Wayfarer 31,square,tr90,rose_gold,premium,860,61.9,0.0,62,0.1526,low,11695.68,10051.5,56.5,SUP009,medium,78,['standard_replenishment'],"['SKU0076', 'SKU0167', 'SKU0242']",0.6788
+SKU0054,Stainless_Steel Rectangle 54,round,wood,navy,premium,1139,76.76,0.0,62,0.1524,low,7251.52,13640.77,70.2,SUP005,medium,62,['supplier_risk'],"['SKU0100', 'SKU0023', 'SKU0032']",0.6959
+SKU0164,Acetate Aviator 164,round,acetate,brown,budget,822,50.93,0.0,59,0.1513,low,1164.66,1807.83,72.2,SUP021,medium,30,['supplier_risk'],"['SKU0048', 'SKU0213', 'SKU0197']",0.6684
+SKU0027,Acetate Cat Eye 27,aviator,acetate,green,mid,622,75.27,0.0,51,0.151,low,4681.29,4040.81,59.1,SUP003,medium,56,['supplier_risk'],"['SKU0070', 'SKU0152', 'SKU0168']",0.665
+SKU0195,Acetate Oval 195,square,aluminium,clear,budget,4697,55.39,0.0,110,0.1505,low,2960.1,7080.39,74.4,SUP019,medium,67,['standard_replenishment'],"['SKU0290', 'SKU0005', 'SKU0039']",0.6897
+SKU0141,Acetate Aviator 141,cat_eye,aluminium,gold,mid,1195,10.35,0.0,61,0.1494,low,3522.14,8363.73,75.0,SUP005,medium,62,['supplier_risk'],"['SKU0220', 'SKU0116', 'SKU0211']",0.6759
+SKU0026,Aluminium Oversized 26,square,wood,green,budget,1050,106.51,0.0,62,0.1481,low,1971.6,2686.86,66.8,SUP023,high,37,['supplier_risk'],"['SKU0050', 'SKU0100', 'SKU0108']",0.6629
+SKU0078,Aluminium Aviator 78,oval,tr90,green,premium,1374,2.59,0.0,69,0.1481,low,8666.4,10947.89,65.1,SUP023,high,37,['supplier_risk'],"['SKU0067', 'SKU0169', 'SKU0001']",0.6572
+SKU0225,Titanium Round 225,rectangle,titanium,navy,budget,1202,43.77,0.0,54,0.1479,low,1315.44,1429.13,58.3,SUP002,medium,53,['supplier_risk'],"['SKU0177', 'SKU0299', 'SKU0084']",0.6286
+SKU0270,Aluminium Wayfarer 270,oversized,titanium,green,budget,686,7.18,0.0,55,0.146,low,1404.15,2148.74,70.9,SUP011,medium,59,['standard_replenishment'],"['SKU0266', 'SKU0249', 'SKU0036']",0.6792
+SKU0086,Wood Oversized 86,round,titanium,tortoise,budget,968,84.32,0.0,66,0.1458,low,2504.04,2837.83,68.1,SUP005,medium,62,['supplier_risk'],"['SKU0051', 'SKU0131', 'SKU0164']",0.6551
+SKU0067,Aluminium Wayfarer 67,oval,tr90,navy,mid,1025,26.060000000000002,0.0,63,0.1445,low,5720.4,6064.83,58.9,SUP003,medium,56,['supplier_risk'],"['SKU0169', 'SKU0078', 'SKU0037']",0.6869
+SKU0036,Aluminium Aviator 36,oversized,titanium,rose_gold,budget,1378,55.68,0.0,64,0.1438,low,1618.56,3318.73,72.8,SUP004,high,94,['supplier_risk'],"['SKU0175', 'SKU0214', 'SKU0018']",0.6604
+SKU0234,Titanium Wayfarer 234,aviator,aluminium,brown,mid,679,49.95,0.0,55,0.1428,low,4310.9,3990.75,61.4,SUP017,medium,45,['standard_replenishment'],"['SKU0040', 'SKU0055', 'SKU0281']",0.6681
+SKU0242,Tr90 Aviator 242,wayfarer,tr90,rose_gold,premium,1198,49.0,0.0,58,0.1423,low,9232.44,8591.87,59.1,SUP023,high,37,['supplier_risk'],"['SKU0293', 'SKU0031', 'SKU0044']",0.6247
+SKU0091,Stainless_Steel Cat Eye 91,round,titanium,rose_gold,budget,897,70.26,0.0,55,0.1378,low,1596.65,2717.46,69.3,SUP005,medium,62,['supplier_risk'],"['SKU0098', 'SKU0284', 'SKU0062']",0.6696
+SKU0233,Acetate Aviator 233,square,acetate,clear,luxury,804,62.67,0.0,58,0.1375,low,14732.0,16190.88,67.1,SUP003,medium,56,['supplier_risk'],"['SKU0268', 'SKU0030', 'SKU0043']",0.6529
+SKU0291,Wood Aviator 291,cat_eye,acetate,navy,premium,906,41.42,0.0,55,0.1365,low,8424.9,11075.93,68.2,SUP023,high,37,['supplier_risk'],"['SKU0209', 'SKU0057', 'SKU0138']",0.6474
+SKU0263,Stainless_Steel Wayfarer 263,square,stainless_steel,gold,mid,959,42.21,0.0,61,0.1351,low,5696.18,6061.58,59.3,SUP004,high,94,['supplier_risk'],"['SKU0193', 'SKU0116', 'SKU0151']",0.6833
+SKU0124,Tr90 Oval 124,rectangle,stainless_steel,red,mid,956,59.81,0.0,64,0.1323,low,3584.0,2841.02,55.8,SUP011,medium,59,['standard_replenishment'],"['SKU0179', 'SKU0146', 'SKU0045']",0.6758
+SKU0219,Aluminium Oversized 219,oversized,wood,brown,luxury,948,85.51,0.0,58,0.1322,low,11079.74,12561.66,62.6,SUP018,medium,47,['supplier_risk'],"['SKU0004', 'SKU0276', 'SKU0075']",0.6599
+SKU0259,Tr90 Oversized 259,rectangle,titanium,silver,budget,967,19.73,0.0,62,0.1316,low,1839.54,2696.05,67.4,SUP010,high,76,['supplier_risk'],"['SKU0215', 'SKU0007', 'SKU0137']",0.6808
+SKU0220,Titanium Oversized 220,cat_eye,aluminium,clear,mid,574,31.89,0.0,52,0.1284,low,3604.12,4778.1,69.5,SUP012,medium,76,['standard_replenishment'],"['SKU0218', 'SKU0141', 'SKU0272']",0.6677
+SKU0161,Tr90 Square 161,aviator,stainless_steel,tortoise,budget,1050,38.25,0.0,63,0.1283,low,2226.42,2513.96,60.8,SUP021,medium,30,['supplier_risk'],"['SKU0134', 'SKU0103', 'SKU0136']",0.6797
+SKU0118,Acetate Aviator 118,square,aluminium,gold,premium,1275,57.03,0.0,62,0.1274,low,7446.2,14895.66,73.0,SUP013,medium,52,['standard_replenishment'],"['SKU0159', 'SKU0162', 'SKU0102']",0.6578
+SKU0264,Tr90 Round 264,oval,wood,brown,budget,1057,39.78,0.0,55,0.1264,low,1894.2,2133.92,63.6,SUP018,medium,47,['supplier_risk'],"['SKU0082', 'SKU0009', 'SKU0048']",0.6269
+SKU0256,Acetate Aviator 256,wayfarer,stainless_steel,green,premium,1566,33.31,0.0,66,0.126,low,6996.66,9567.19,65.6,SUP010,high,76,['supplier_risk'],"['SKU0110', 'SKU0080', 'SKU0179']",0.6341
+SKU0203,Titanium Oversized 203,oval,titanium,clear,mid,884,6.58,0.0,58,0.126,low,5951.38,5701.9,57.2,SUP010,high,76,['supplier_risk'],"['SKU0004', 'SKU0019', 'SKU0042']",0.6804
+SKU0300,Stainless_Steel Square 300,oval,tr90,red,mid,1288,20.41,0.0,61,0.1253,low,4337.71,4960.04,64.6,SUP007,medium,54,['supplier_risk'],"['SKU0148', 'SKU0045', 'SKU0001']",0.6272
+SKU0268,Wood Wayfarer 268,square,acetate,clear,budget,688,31.11,0.0,51,0.1248,low,1129.65,896.5,59.0,SUP023,high,37,['supplier_risk'],"['SKU0245', 'SKU0233', 'SKU0009']",0.644
+SKU0006,Tr90 Aviator 6,round,titanium,tortoise,luxury,1042,3.41,0.0,52,0.1246,low,17412.72,17659.95,59.4,SUP002,medium,53,['supplier_risk'],"['SKU0222', 'SKU0237', 'SKU0091']",0.6205
+SKU0214,Stainless_Steel Oversized 214,oversized,acetate,rose_gold,premium,1136,64.36,0.0,64,0.1242,low,7518.08,10529.46,63.3,SUP024,low,52,['standard_replenishment'],"['SKU0053', 'SKU0036', 'SKU0199']",0.7129
+SKU0288,Acetate Cat Eye 288,wayfarer,wood,tortoise,mid,858,49.78,0.0,60,0.1238,low,2718.6,4946.94,72.4,SUP017,medium,45,['standard_replenishment'],"['SKU0087', 'SKU0088', 'SKU0289']",0.6787
+SKU0112,Acetate Oversized 112,oval,aluminium,red,budget,1324,36.61,0.0,60,0.1219,low,2205.6,1901.51,61.5,SUP023,high,37,['supplier_risk'],"['SKU0010', 'SKU0058', 'SKU0005']",0.5955
+SKU0123,Stainless_Steel Aviator 123,cat_eye,tr90,green,budget,881,59.269999999999996,0.0,59,0.1217,low,764.64,1282.17,74.3,SUP021,medium,30,['supplier_risk'],"['SKU0041', 'SKU0081', 'SKU0037']",0.6588
+SKU0032,Stainless_Steel Rectangle 32,round,aluminium,navy,luxury,1196,61.46,0.0,57,0.1213,low,15161.43,17342.59,58.5,SUP024,low,52,['standard_replenishment'],"['SKU0011', 'SKU0101', 'SKU0162']",0.6776
+SKU0058,Acetate Oval 58,wayfarer,aluminium,red,mid,1040,1.72,0.0,56,0.121,low,3884.16,6521.15,69.0,SUP015,medium,84,['standard_replenishment'],"['SKU0253', 'SKU0278', 'SKU0102']",0.6609
+SKU0033,Stainless_Steel Wayfarer 33,rectangle,titanium,black,mid,1249,6.640000000000001,0.0,66,0.121,low,3573.24,7767.21,74.3,SUP015,medium,84,['standard_replenishment'],"['SKU0007', 'SKU0137', 'SKU0014']",0.6787
+SKU0295,Aluminium Cat Eye 295,wayfarer,titanium,brown,premium,1494,54.1,0.0,64,0.1203,low,6458.24,6706.8,59.9,SUP005,medium,62,['supplier_risk'],"['SKU0040', 'SKU0130', 'SKU0197']",0.6239
+SKU0057,Aluminium Oval 57,oval,acetate,navy,mid,885,14.459999999999999,0.0,55,0.1172,low,5074.3,4852.06,57.9,SUP010,high,76,['supplier_risk'],"['SKU0160', 'SKU0291', 'SKU0209']",0.6555
+SKU0292,Wood Oval 292,cat_eye,titanium,red,budget,1096,4.78,0.0,66,0.1166,low,2368.08,1839.46,55.9,SUP009,medium,78,['standard_replenishment'],"['SKU0063', 'SKU0226', 'SKU0086']",0.6632
+SKU0065,Acetate Rectangle 65,square,acetate,navy,mid,948,25.21,0.0,58,0.1166,low,3794.94,5641.88,68.2,SUP021,medium,30,['supplier_risk'],"['SKU0228', 'SKU0238', 'SKU0009']",0.6622
+SKU0274,Tr90 Cat Eye 274,cat_eye,titanium,rose_gold,mid,799,38.99,0.0,56,0.1165,low,4007.92,5355.09,67.5,SUP009,medium,78,['standard_replenishment'],"['SKU0286', 'SKU0147', 'SKU0262']",0.6676
+SKU0212,Acetate Oversized 212,round,tr90,rose_gold,mid,576,49.3,0.0,49,0.1161,low,2848.37,4315.83,74.7,SUP010,high,76,['supplier_risk'],"['SKU0024', 'SKU0108', 'SKU0001']",0.6441
+SKU0188,Tr90 Round 188,cat_eye,aluminium,black,budget,1344,44.54,0.0,57,0.1157,low,1176.48,1970.64,68.6,SUP006,medium,49,['standard_replenishment'],"['SKU0039', 'SKU0016', 'SKU0112']",0.6251
+SKU0224,Aluminium Cat Eye 224,oval,titanium,tortoise,luxury,1619,70.47,0.0,66,0.1152,low,23253.78,27345.31,61.7,SUP015,medium,84,['standard_replenishment'],"['SKU0107', 'SKU0127', 'SKU0133']",0.6431
+SKU0206,Tr90 Round 206,square,aluminium,clear,budget,589,38.26,0.0,47,0.1147,low,1388.38,2316.15,72.1,SUP004,high,94,['supplier_risk'],"['SKU0026', 'SKU0071', 'SKU0128']",0.6624
+SKU0108,Acetate Square 108,round,tr90,green,budget,1006,51.41,0.0,56,0.1145,low,2473.52,2386.01,59.3,SUP005,medium,62,['supplier_risk'],"['SKU0131', 'SKU0041', 'SKU0212']",0.6402
+SKU0121,Titanium Cat Eye 121,rectangle,tr90,brown,mid,1745,50.52,0.0,62,0.1143,low,4487.56,5591.17,64.7,SUP010,high,76,['supplier_risk'],"['SKU0075', 'SKU0004', 'SKU0019']",0.5849
+SKU0151,Aluminium Oval 151,square,stainless_steel,navy,premium,1369,24.419999999999998,0.0,60,0.1132,low,4723.2,5609.79,69.8,SUP023,high,37,['supplier_risk'],"['SKU0032', 'SKU0106', 'SKU0116']",0.5836
+SKU0071,Titanium Oversized 71,cat_eye,aluminium,tortoise,budget,763,70.55,0.0,52,0.113,low,1490.84,2438.56,72.3,SUP002,medium,53,['supplier_risk'],"['SKU0272', 'SKU0279', 'SKU0104']",0.6501
+SKU0227,Acetate Aviator 227,rectangle,acetate,silver,budget,811,3.8800000000000003,0.0,50,0.1118,low,2161.0,2911.45,63.1,SUP016,medium,82,['standard_replenishment'],"['SKU0111', 'SKU0170', 'SKU0059']",0.6701
+SKU0294,Wood Oval 294,round,tr90,gold,budget,878,36.089999999999996,0.0,56,0.1116,low,1388.24,2422.15,73.0,SUP005,medium,62,['supplier_risk'],"['SKU0060', 'SKU0115', 'SKU0109']",0.6543
+SKU0129,Acetate Round 129,rectangle,wood,silver,budget,1065,10.06,0.0,60,0.1116,low,1105.2,1376.48,65.9,SUP005,medium,62,['supplier_risk'],"['SKU0190', 'SKU0254', 'SKU0172']",0.6431
+SKU0075,Stainless_Steel Wayfarer 75,rectangle,wood,brown,budget,1559,64.06,0.0,61,0.1115,low,1373.72,1851.72,63.1,SUP011,medium,59,['standard_replenishment'],"['SKU0121', 'SKU0219', 'SKU0050']",0.6329
+SKU0089,Titanium Cat Eye 89,wayfarer,titanium,red,budget,660,8.05,0.0,52,0.1115,low,1213.68,963.31,60.0,SUP002,medium,53,['supplier_risk'],"['SKU0064', 'SKU0296', 'SKU0069']",0.6455
+SKU0145,Tr90 Oversized 145,oval,aluminium,gold,mid,1013,65.18,0.0,54,0.1114,low,2946.78,3594.62,64.8,SUP010,high,76,['supplier_risk'],"['SKU0055', 'SKU0083', 'SKU0156']",0.6327
+SKU0183,Titanium Rectangle 183,square,wood,tortoise,mid,915,50.129999999999995,0.0,55,0.1101,low,3683.9,4363.79,65.9,SUP002,medium,53,['supplier_risk'],"['SKU0093', 'SKU0221', 'SKU0208']",0.6422
+SKU0080,Acetate Rectangle 80,cat_eye,stainless_steel,green,premium,885,69.26,0.0,57,0.1095,low,7962.9,9689.86,67.7,SUP003,medium,56,['supplier_risk'],"['SKU0256', 'SKU0260', 'SKU0110']",0.6484
+SKU0062,Titanium Cat Eye 62,round,wood,rose_gold,mid,723,58.0,0.0,55,0.1092,low,3186.15,2824.75,57.3,SUP008,medium,87,['standard_replenishment'],"['SKU0180', 'SKU0091', 'SKU0098']",0.676
+SKU0135,Acetate Oversized 135,square,titanium,silver,mid,1333,9.51,0.0,63,0.1089,low,2067.66,3566.51,73.8,SUP004,high,94,['supplier_risk'],"['SKU0229', 'SKU0014', 'SKU0007']",0.624
+SKU0128,Aluminium Rectangle 128,oversized,aluminium,navy,budget,1118,37.28,0.0,58,0.1089,low,1670.4,2866.27,73.7,SUP004,high,94,['supplier_risk'],"['SKU0279', 'SKU0071', 'SKU0084']",0.6289
+SKU0119,Stainless_Steel Square 119,aviator,acetate,brown,mid,677,32.55,0.0,51,0.1081,low,2829.48,3526.02,61.9,SUP012,medium,76,['standard_replenishment'],"['SKU0013', 'SKU0103', 'SKU0004']",0.6899
+SKU0107,Titanium Rectangle 107,oval,stainless_steel,tortoise,mid,1292,61.93,0.0,67,0.1051,low,4293.36,4902.69,59.2,SUP008,medium,87,['standard_replenishment'],"['SKU0127', 'SKU0187', 'SKU0198']",0.6842
+SKU0205,Wood Wayfarer 205,round,acetate,black,budget,745,35.480000000000004,0.0,51,0.1048,low,1212.78,2485.22,72.5,SUP020,medium,99,['standard_replenishment'],"['SKU0052', 'SKU0074', 'SKU0103']",0.6834
+SKU0280,Tr90 Cat Eye 280,square,acetate,black,premium,889,65.44,0.0,57,0.103,low,6995.61,7031.7,63.4,SUP004,high,94,['supplier_risk'],"['SKU0020', 'SKU0233', 'SKU0014']",0.6429
+SKU0169,Tr90 Wayfarer 169,oval,tr90,clear,mid,989,30.07,0.0,57,0.1021,low,2160.87,3540.8,72.8,SUP021,medium,30,['supplier_risk'],"['SKU0067', 'SKU0078', 'SKU0001']",0.6398
+SKU0172,Tr90 Oversized 172,oversized,wood,silver,mid,805,54.89,0.0,55,0.1017,low,3634.95,4788.82,63.6,SUP024,low,52,['standard_replenishment'],"['SKU0046', 'SKU0129', 'SKU0190']",0.6927
+SKU0158,Tr90 Cat Eye 158,oversized,acetate,navy,premium,898,7.800000000000001,0.0,58,0.1017,low,9222.58,9278.06,56.4,SUP014,low,59,['standard_replenishment'],"['SKU0186', 'SKU0238', 'SKU0114']",0.6974
+SKU0045,Tr90 Round 45,wayfarer,tr90,red,premium,931,13.370000000000001,0.0,60,0.1014,low,10011.0,12401.15,62.6,SUP019,medium,67,['standard_replenishment'],"['SKU0179', 'SKU0088', 'SKU0148']",0.6889
+SKU0043,Stainless_Steel Round 43,round,acetate,red,premium,729,13.459999999999999,0.0,52,0.0991,low,6081.92,10340.76,74.0,SUP021,medium,30,['supplier_risk'],"['SKU0021', 'SKU0049', 'SKU0237']",0.6529
+SKU0236,Titanium Oversized 236,rectangle,acetate,green,premium,716,32.94,0.0,55,0.0982,low,6041.2,5609.54,63.7,SUP022,medium,70,['standard_replenishment'],"['SKU0012', 'SKU0233', 'SKU0235']",0.6516
+SKU0130,Wood Wayfarer 130,oval,titanium,brown,mid,1121,18.32,0.0,60,0.098,low,4750.2,6766.16,64.7,SUP024,low,52,['standard_replenishment'],"['SKU0229', 'SKU0055', 'SKU0295']",0.6757
+SKU0265,Titanium Square 265,rectangle,wood,brown,luxury,941,10.629999999999999,0.0,57,0.0977,low,14738.49,26236.71,72.9,SUP015,medium,84,['standard_replenishment'],"['SKU0066', 'SKU0012', 'SKU0137']",0.6562
+SKU0250,Wood Wayfarer 250,cat_eye,tr90,gold,mid,1037,56.56,0.0,54,0.0975,low,4213.08,3603.67,55.8,SUP017,medium,45,['standard_replenishment'],"['SKU0041', 'SKU0138', 'SKU0125']",0.6305
+SKU0208,Titanium Aviator 208,oval,wood,tortoise,premium,795,49.85,0.0,52,0.0972,low,6797.96,9410.57,71.5,SUP004,high,94,['supplier_risk'],"['SKU0223', 'SKU0183', 'SKU0157']",0.6318
+SKU0251,Tr90 Oval 251,round,stainless_steel,green,premium,599,43.02,0.0,52,0.0969,low,5456.88,6886.2,71.4,SUP005,medium,62,['supplier_risk'],"['SKU0032', 'SKU0100', 'SKU0101']",0.6276
+SKU0226,Titanium Cat Eye 226,oval,titanium,red,luxury,1478,105.41,0.0,67,0.0965,low,12837.2,27082.59,74.6,SUP012,medium,76,['standard_replenishment'],"['SKU0296', 'SKU0130', 'SKU0292']",0.6497
+SKU0044,Titanium Aviator 44,rectangle,tr90,rose_gold,mid,804,64.37,0.0,57,0.0961,low,3336.78,4262.89,70.3,SUP022,medium,70,['standard_replenishment'],"['SKU0066', 'SKU0031', 'SKU0242']",0.6532
+SKU0125,Aluminium Round 125,cat_eye,tr90,black,budget,1165,50.82,0.0,55,0.0939,low,1375.55,2093.67,72.9,SUP010,high,76,['supplier_risk'],"['SKU0041', 'SKU0138', 'SKU0250']",0.596
+SKU0197,Wood Rectangle 197,wayfarer,acetate,brown,mid,1335,50.78,0.0,64,0.0937,low,2860.16,6438.97,74.6,SUP014,low,59,['standard_replenishment'],"['SKU0038', 'SKU0040', 'SKU0152']",0.6602
+SKU0040,Acetate Wayfarer 40,wayfarer,aluminium,brown,premium,1088,41.7,0.0,60,0.0937,low,12286.2,12827.93,57.7,SUP014,low,59,['standard_replenishment'],"['SKU0055', 'SKU0275', 'SKU0295']",0.6765
+SKU0140,Tr90 Round 140,cat_eye,wood,clear,budget,1250,35.93,0.0,61,0.0924,low,1913.57,2595.93,66.7,SUP006,medium,49,['standard_replenishment'],"['SKU0273', 'SKU0090', 'SKU0166']",0.6364
+SKU0116,Aluminium Square 116,cat_eye,stainless_steel,gold,premium,1250,9.54,0.0,63,0.0924,low,5609.52,8092.02,71.3,SUP013,medium,52,['standard_replenishment'],"['SKU0141', 'SKU0143', 'SKU0080']",0.6264
+SKU0166,Aluminium Rectangle 166,cat_eye,wood,rose_gold,mid,1088,30.98,0.0,62,0.0923,low,3294.06,7135.11,74.8,SUP019,medium,67,['standard_replenishment'],"['SKU0090', 'SKU0081', 'SKU0140']",0.677
+SKU0194,Titanium Aviator 194,wayfarer,wood,brown,premium,1057,43.78,0.0,58,0.0914,low,5069.2,9929.43,73.4,SUP016,medium,82,['standard_replenishment'],"['SKU0064', 'SKU0275', 'SKU0096']",0.653
+SKU0150,Acetate Aviator 150,aviator,stainless_steel,red,budget,757,4.49,0.0,52,0.0909,low,2025.4,1636.49,58.2,SUP009,medium,78,['standard_replenishment'],"['SKU0134', 'SKU0189', 'SKU0069']",0.6444
+SKU0247,Stainless_Steel Oversized 247,oval,stainless_steel,green,mid,1135,15.65,0.0,62,0.0906,low,3488.74,5000.63,67.1,SUP012,medium,76,['standard_replenishment'],"['SKU0160', 'SKU0168', 'SKU0251']",0.6624
+SKU0063,Acetate Round 63,cat_eye,acetate,red,mid,1030,71.92,0.0,56,0.0899,low,2177.28,3791.73,71.2,SUP022,medium,70,['standard_replenishment'],"['SKU0142', 'SKU0261', 'SKU0292']",0.6459
+SKU0014,Acetate Cat Eye 14,square,titanium,black,premium,1246,23.33,0.0,62,0.0895,low,9472.98,6621.35,55.3,SUP013,medium,52,['standard_replenishment'],"['SKU0252', 'SKU0135', 'SKU0229']",0.6225
+SKU0210,Acetate Square 210,wayfarer,stainless_steel,brown,mid,917,37.62,0.0,57,0.0885,low,3451.35,2984.91,55.2,SUP016,medium,82,['standard_replenishment'],"['SKU0179', 'SKU0256', 'SKU0255']",0.6626
+SKU0122,Titanium Cat Eye 122,oversized,wood,navy,mid,1231,73.00999999999999,0.0,65,0.0879,low,2728.05,3986.38,66.3,SUP014,low,59,['standard_replenishment'],"['SKU0238', 'SKU0283', 'SKU0162']",0.6725
+SKU0072,Aluminium Cat Eye 72,cat_eye,titanium,black,mid,743,22.68,0.0,53,0.0868,low,3001.39,2949.68,63.5,SUP006,medium,49,['standard_replenishment'],"['SKU0222', 'SKU0092', 'SKU0262']",0.6532
+SKU0177,Tr90 Square 177,rectangle,tr90,navy,mid,866,60.65,0.0,53,0.0864,low,3479.45,4249.93,62.6,SUP024,low,52,['standard_replenishment'],"['SKU0225', 'SKU0202', 'SKU0046']",0.6641
+SKU0013,Stainless_Steel Rectangle 13,aviator,aluminium,brown,mid,905,65.06,0.0,56,0.0859,low,3735.2,2865.9,55.6,SUP017,medium,45,['standard_replenishment'],"['SKU0119', 'SKU0004', 'SKU0139']",0.6496
+SKU0207,Titanium Oversized 207,oversized,aluminium,tortoise,budget,939,35.86,0.0,59,0.0853,low,1650.82,1803.8,61.1,SUP011,medium,59,['standard_replenishment'],"['SKU0272', 'SKU0211', 'SKU0279']",0.6656
+SKU0064,Stainless_Steel Oversized 64,wayfarer,wood,red,premium,889,30.77,0.0,54,0.0852,low,3920.4,5705.33,73.3,SUP010,high,76,['supplier_risk'],"['SKU0194', 'SKU0089', 'SKU0023']",0.6218
+SKU0113,Aluminium Rectangle 113,aviator,titanium,clear,mid,1095,30.79,0.0,56,0.085,low,3046.96,2792.15,58.7,SUP001,medium,63,['standard_replenishment'],"['SKU0184', 'SKU0007', 'SKU0002']",0.6284
+SKU0069,Titanium Cat Eye 69,wayfarer,stainless_steel,rose_gold,budget,918,22.18,0.0,56,0.085,low,1270.64,1828.71,69.1,SUP001,medium,63,['standard_replenishment'],"['SKU0165', 'SKU0024', 'SKU0018']",0.6524
+SKU0066,Aluminium Oval 66,rectangle,wood,rose_gold,mid,1125,35.15,0.0,59,0.0824,low,4049.76,4233.93,60.6,SUP011,medium,59,['standard_replenishment'],"['SKU0044', 'SKU0265', 'SKU0007']",0.6453
+SKU0120,Acetate Oval 120,oval,titanium,gold,mid,1379,49.05,0.0,66,0.0821,low,6939.24,6304.32,55.9,SUP014,low,59,['standard_replenishment'],"['SKU0007', 'SKU0053', 'SKU0078']",0.6598
+SKU0073,Wood Cat Eye 73,wayfarer,titanium,navy,premium,1037,42.9,0.0,63,0.0798,low,9658.53,7824.0,55.0,SUP016,medium,82,['standard_replenishment'],"['SKU0182', 'SKU0204', 'SKU0283']",0.6668
+SKU0229,Tr90 Oval 229,square,titanium,brown,mid,1007,71.78,0.0,62,0.0791,low,5803.82,5567.8,57.5,SUP014,low,59,['standard_replenishment'],"['SKU0002', 'SKU0130', 'SKU0135']",0.6746
+SKU0159,Stainless_Steel Square 159,square,aluminium,black,premium,985,63.029999999999994,0.0,58,0.0771,low,6718.72,10815.95,74.0,SUP017,medium,45,['standard_replenishment'],"['SKU0118', 'SKU0162', 'SKU0014']",0.6394
+SKU0209,Wood Oval 209,cat_eye,acetate,navy,budget,733,42.38,0.0,54,0.0771,low,1605.42,1720.44,64.9,SUP020,medium,99,['standard_replenishment'],"['SKU0291', 'SKU0261', 'SKU0057']",0.6564
+SKU0099,Tr90 Square 99,wayfarer,acetate,gold,budget,775,49.51,0.0,53,0.0748,low,1656.25,1782.78,61.9,SUP019,medium,67,['standard_replenishment'],"['SKU0022', 'SKU0232', 'SKU0049']",0.6562
+SKU0260,Aluminium Cat Eye 260,cat_eye,stainless_steel,rose_gold,mid,919,14.29,0.0,56,0.0737,low,3643.92,4185.1,64.7,SUP011,medium,59,['standard_replenishment'],"['SKU0056', 'SKU0080', 'SKU0016']",0.6407
+SKU0003,Stainless_Steel Oval 3,oversized,tr90,tortoise,premium,696,55.62,0.0,49,0.0732,low,8103.62,6563.82,56.9,SUP012,medium,76,['standard_replenishment'],"['SKU0279', 'SKU0202', 'SKU0024']",0.6492
+SKU0022,Acetate Wayfarer 22,wayfarer,acetate,gold,mid,872,3.6999999999999997,0.0,52,0.0728,low,3302.52,3989.13,65.2,SUP020,medium,99,['standard_replenishment'],"['SKU0070', 'SKU0099', 'SKU0196']",0.6347
+SKU0010,Titanium Cat Eye 10,oval,aluminium,brown,mid,783,10.879999999999999,0.0,53,0.0718,low,2475.1,3288.84,66.2,SUP024,low,52,['standard_replenishment'],"['SKU0055', 'SKU0112', 'SKU0008']",0.668
+SKU0147,Aluminium Cat Eye 147,square,titanium,rose_gold,mid,693,19.07,0.0,49,0.071,low,3838.66,4181.6,68.3,SUP004,high,94,['supplier_risk'],"['SKU0274', 'SKU0286', 'SKU0014']",0.6087
+SKU0149,Acetate Cat Eye 149,oversized,tr90,red,mid,1160,22.94,0.0,57,0.0704,low,2941.77,2429.92,59.4,SUP001,medium,63,['standard_replenishment'],"['SKU0001', 'SKU0003', 'SKU0045']",0.6014
+SKU0201,Wood Cat Eye 201,oversized,acetate,red,premium,1156,47.92,0.0,63,0.0695,low,10878.84,9830.56,60.2,SUP022,medium,70,['standard_replenishment'],"['SKU0238', 'SKU0035', 'SKU0126']",0.6389
+SKU0189,Tr90 Oversized 189,aviator,stainless_steel,red,premium,882,71.41,0.0,55,0.0691,low,8861.05,7026.99,59.0,SUP006,medium,49,['standard_replenishment'],"['SKU0143', 'SKU0134', 'SKU0150']",0.6364
+SKU0039,Tr90 Wayfarer 39,round,aluminium,black,budget,1343,70.1,0.0,62,0.0691,low,1403.06,1136.3,59.5,SUP006,medium,49,['standard_replenishment'],"['SKU0188', 'SKU0174', 'SKU0085']",0.6059
+SKU0243,Stainless_Steel Wayfarer 243,oversized,acetate,navy,budget,930,61.550000000000004,0.0,57,0.069,low,2194.5,2512.75,64.6,SUP019,medium,67,['standard_replenishment'],"['SKU0238', 'SKU0103', 'SKU0128']",0.654
+SKU0035,Acetate Wayfarer 35,aviator,acetate,red,mid,1046,36.5,0.0,59,0.0678,low,2102.17,3574.83,74.0,SUP011,medium,59,['standard_replenishment'],"['SKU0201', 'SKU0021', 'SKU0045']",0.6386
+SKU0144,Titanium Rectangle 144,rectangle,titanium,rose_gold,mid,810,55.55,0.0,52,0.0675,low,1888.12,3115.38,75.0,SUP001,medium,63,['standard_replenishment'],"['SKU0019', 'SKU0176', 'SKU0004']",0.6281
+SKU0269,Wood Square 269,wayfarer,wood,gold,budget,1303,43.92,0.0,59,0.0647,low,1205.37,1659.88,73.0,SUP009,medium,78,['standard_replenishment'],"['SKU0271', 'SKU0282', 'SKU0029']",0.5767
+SKU0296,Stainless_Steel Square 296,oval,titanium,red,luxury,767,35.36,0.0,54,0.064,low,15986.7,12842.94,57.4,SUP020,medium,99,['standard_replenishment'],"['SKU0226', 'SKU0089', 'SKU0104']",0.6534
+SKU0110,Tr90 Oversized 110,wayfarer,stainless_steel,clear,luxury,1542,3.54,0.0,65,0.0631,low,26915.2,32040.2,65.5,SUP024,low,52,['standard_replenishment'],"['SKU0179', 'SKU0256', 'SKU0210']",0.6165
+SKU0215,Tr90 Wayfarer 215,rectangle,titanium,silver,premium,1708,12.6,0.0,68,0.0626,low,6245.8,8448.59,72.5,SUP017,medium,45,['standard_replenishment'],"['SKU0259', 'SKU0137', 'SKU0007']",0.5886
+SKU0090,Aluminium Rectangle 90,cat_eye,wood,tortoise,mid,1255,54.86,0.0,63,0.0615,low,5202.54,5134.42,64.2,SUP012,medium,76,['standard_replenishment'],"['SKU0166', 'SKU0081', 'SKU0140']",0.6251
+SKU0200,Wood Cat Eye 200,round,stainless_steel,black,mid,1084,47.05,0.0,62,0.0614,low,4532.2,4201.29,60.8,SUP008,medium,87,['standard_replenishment'],"['SKU0025', 'SKU0014', 'SKU0185']",0.6458
+SKU0276,Acetate Rectangle 276,oversized,wood,brown,mid,1145,39.019999999999996,0.0,56,0.0591,low,4444.16,3277.0,57.2,SUP011,medium,59,['standard_replenishment'],"['SKU0096', 'SKU0194', 'SKU0219']",0.6045
+SKU0293,Wood Square 293,wayfarer,aluminium,rose_gold,luxury,905,17.37,0.0,54,0.0584,low,11537.64,13594.34,70.1,SUP021,medium,30,['supplier_risk'],"['SKU0102', 'SKU0242', 'SKU0058']",0.5932
+SKU0096,Acetate Cat Eye 96,oval,wood,brown,mid,938,44.96,0.0,56,0.0579,low,3568.88,3483.94,64.4,SUP022,medium,70,['standard_replenishment'],"['SKU0276', 'SKU0194', 'SKU0157']",0.6229
+SKU0252,Aluminium Rectangle 252,square,tr90,black,premium,853,71.67,0.0,57,0.0574,low,4753.8,6576.06,71.0,SUP008,medium,87,['standard_replenishment'],"['SKU0014', 'SKU0178', 'SKU0001']",0.65
+SKU0267,Acetate Cat Eye 267,square,stainless_steel,navy,budget,1204,62.32,0.0,58,0.0573,low,2537.5,1954.0,57.7,SUP019,medium,67,['standard_replenishment'],"['SKU0193', 'SKU0185', 'SKU0297']",0.6055
+SKU0101,Aluminium Wayfarer 101,round,wood,tortoise,luxury,896,72.42,0.0,54,0.0558,low,11457.72,16084.52,70.2,SUP014,low,59,['standard_replenishment'],"['SKU0093', 'SKU0285', 'SKU0006']",0.6318
+SKU0221,Stainless_Steel Square 221,square,wood,tortoise,mid,837,30.55,0.0,58,0.0557,low,3490.44,5355.45,74.0,SUP008,medium,87,['standard_replenishment'],"['SKU0183', 'SKU0031', 'SKU0087']",0.6452
+SKU0049,Wood Oversized 49,wayfarer,acetate,red,premium,1021,78.63,0.0,57,0.0529,low,8734.11,8086.69,61.5,SUP014,low,59,['standard_replenishment'],"['SKU0043', 'SKU0099', 'SKU0143']",0.6286
+SKU0231,Titanium Oversized 231,oval,stainless_steel,clear,budget,852,67.56,0.0,57,0.0524,low,2081.64,1983.73,62.8,SUP014,low,59,['standard_replenishment'],"['SKU0107', 'SKU0127', 'SKU0187']",0.6501
+SKU0046,Stainless_Steel Round 46,oversized,wood,navy,premium,1129,51.01,0.0,56,0.0507,low,10596.32,7581.59,57.8,SUP016,medium,82,['standard_replenishment'],"['SKU0202', 'SKU0223', 'SKU0172']",0.5976
+SKU0199,Aluminium Rectangle 199,oversized,acetate,black,budget,954,53.97,0.0,61,0.0469,low,1813.53,1471.79,60.5,SUP008,medium,87,['standard_replenishment'],"['SKU0214', 'SKU0005', 'SKU0036']",0.6372
+SKU0193,Aluminium Aviator 193,square,stainless_steel,gold,budget,1113,13.53,0.0,58,0.044,low,1740.0,1986.69,68.6,SUP008,medium,87,['standard_replenishment'],"['SKU0267', 'SKU0263', 'SKU0185']",0.6103
+SKU0021,Stainless_Steel Aviator 21,round,acetate,red,premium,884,25.53,0.0,55,0.044,low,10684.3,8171.14,59.5,SUP008,medium,87,['standard_replenishment'],"['SKU0043', 'SKU0005', 'SKU0085']",0.625
+SKU0059,Wood Rectangle 59,cat_eye,titanium,silver,budget,914,30.28,0.0,51,0.0384,low,1585.08,1419.72,63.2,SUP014,low,59,['standard_replenishment'],"['SKU0094', 'SKU0028', 'SKU0176']",0.6048
+SKU0134,Titanium Oversized 134,aviator,stainless_steel,red,mid,804,40.76,0.0,49,0.0252,low,3667.16,3832.17,67.3,SUP024,low,52,['standard_replenishment'],"['SKU0189', 'SKU0150', 'SKU0161']",0.5946

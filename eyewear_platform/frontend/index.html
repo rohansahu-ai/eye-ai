@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EyeAI — Buying Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="https://static1.lenskart.com/media/desktop/img/Sep23/13-Sep/lenskart-logo-new-144x144.png" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <style>
+    * { scrollbar-width: thin; scrollbar-color: #0d9488 #1e293b; }
+    *::-webkit-scrollbar { width: 6px; height: 6px; }
+    *::-webkit-scrollbar-track { background: #1e293b; }
+    *::-webkit-scrollbar-thumb { background: #0d9488; border-radius: 9999px; }
+    body { background: #020617; color: #f1f5f9; font-family: 'Inter', sans-serif; margin:0; }
+    .glass-card { background: rgba(30,41,59,0.6); backdrop-filter: blur(8px); border: 1px solid rgba(71,85,105,0.5); border-radius: 1rem; }
+    .metric-card { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; transition: border-color 0.3s; background: rgba(30,41,59,0.6); backdrop-filter: blur(8px); border-radius: 1rem; }
+    .metric-card:hover { border-color: rgba(13,148,136,0.5); }
+    .btn-primary { background: #0d9488; color: white; padding: 0.5rem 1rem; border-radius: 0.75rem; font-weight: 500; transition: background 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; cursor: pointer; border: none; }
+    .btn-primary:hover { background: #14b8a6; }
+    .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-ghost { background: rgba(51,65,85,0.5); color: #cbd5e1; padding: 0.5rem 1rem; border-radius: 0.75rem; font-weight: 500; transition: background 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; cursor: pointer; border: none; }
+    .btn-ghost:hover { background: #334155; color: white; }
+    .nav-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.75rem; font-size: 0.875rem; font-weight: 500; color: #94a3b8; transition: all 0.2s; cursor: pointer; text-decoration: none; }
+    .nav-item:hover { color: white; background: rgba(30,41,59,0.8); }
+    .nav-item.active { background: rgba(19,78,74,0.4); color: #2dd4bf; border: 1px solid rgba(13,148,136,0.4); }
+    .badge { display: inline-flex; align-items: center; font-size: 0.75rem; padding: 0.125rem 0.5rem; border-radius: 9999px; font-weight: 500; border: 1px solid; }
+    .badge-critical { background: rgba(239,68,68,0.2); color: #f87171; border-color: rgba(239,68,68,0.3); }
+    .badge-high     { background: rgba(249,115,22,0.2); color: #fb923c; border-color: rgba(249,115,22,0.3); }
+    .badge-medium   { background: rgba(234,179,8,0.2);  color: #facc15; border-color: rgba(234,179,8,0.3); }
+    .badge-low      { background: rgba(34,197,94,0.2);  color: #4ade80; border-color: rgba(34,197,94,0.3); }
+    .table-head { padding: 0.75rem 1rem; font-size: 0.75rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+    .table-cell { padding: 0.75rem 1rem; font-size: 0.875rem; }
+    .table-row { border-bottom: 1px solid rgba(71,85,105,0.4); transition: background 0.15s; }
+    .table-row:hover { background: rgba(51,65,85,0.2); }
+    .input-field { background: #1e293b; border: 1px solid #334155; border-radius: 0.75rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; color: white; transition: border-color 0.2s; width: 100%; outline: none; box-sizing: border-box; }
+    .input-field:focus { border-color: #0d9488; }
+    .select-field { background: #1e293b; border: 1px solid #334155; border-radius: 0.75rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; color: white; transition: border-color 0.2s; outline: none; }
+    .select-field:focus { border-color: #0d9488; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes bounce { 0%,100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)} 50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)} }
+    @keyframes pulse { 50% { opacity: .5; } }
+    .animate-spin { animation: spin 1s linear infinite; }
+    .animate-bounce { animation: bounce 1s infinite; }
+    .animate-pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+    .tab-btn { padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s; cursor: pointer; border: none; color: #94a3b8; background: transparent; }
+    .tab-btn:hover { color: white; }
+    .tab-btn.active { background: #0d9488; color: white; box-shadow: 0 4px 15px rgba(13,148,136,0.25); }
+    .tab-bar { display: flex; gap: 0.25rem; background: rgba(30,41,59,0.6); padding: 0.25rem; border-radius: 0.75rem; width: fit-content; margin-bottom: 1.5rem; }
+    .progress-bar { background: #334155; border-radius: 9999px; height: 6px; overflow: hidden; display:inline-block; }
+    .progress-fill { height: 100%; border-radius: 9999px; }
+    #app { display: flex; height: 100vh; overflow: hidden; position: relative; }
+    #sidebar { width: 256px; flex-shrink: 0; display: flex; flex-direction: column; background: rgba(15,23,42,0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-right: 1px solid rgba(30,41,59,0.5); border-radius: 0 1rem 1rem 0; height: calc(100vh - 1.5rem); position: fixed; top: 0.75rem; left: 0.75rem; z-index: 100; opacity: 0.72; transition: opacity 0.25s, box-shadow 0.25s; box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
+    #sidebar:hover { opacity: 1; box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
+    #main-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; margin-left: 272px; }
+    #content { flex: 1; overflow-y: auto; padding: 2rem; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .sku-chip { text-align: left; padding: 0.375rem 0.75rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 500; transition: all 0.15s; cursor: pointer; border: 1px solid transparent; background: #1e293b; color: #94a3b8; }
+    .sku-chip:hover { color: white; }
+    .sku-chip.selected { background: rgba(13,148,136,0.3); color: #5eead4; border-color: rgba(13,148,136,0.4); }
+    .filter-chip { padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 500; border: 1px solid; transition: all 0.15s; cursor: pointer; background: #1e293b; color: #64748b; border-color: #334155; }
+    .filter-chip.active-critical { background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4); color: #fca5a5; }
+    .filter-chip.active-high { background: rgba(249,115,22,0.2); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .filter-chip.active-medium { background: rgba(234,179,8,0.2); border-color: rgba(234,179,8,0.4); color: #fde047; }
+    .filter-chip.active-low { background: rgba(34,197,94,0.2); border-color: rgba(34,197,94,0.4); color: #86efac; }
+    .filter-chip.active-teal { background: rgba(13,148,136,0.2); border-color: rgba(13,148,136,0.4); color: #5eead4; }
+    .chat-bubble-user { background: rgba(13,148,136,0.2); border: 1px solid rgba(13,148,136,0.3); color: #f1f5f9; border-radius: 1rem; border-bottom-right-radius: 0.25rem; padding: 0.75rem 1rem; font-size: 0.875rem; max-width: 75%; white-space: pre-wrap; }
+    .chat-bubble-ai { background: rgba(51,65,85,0.5); border: 1px solid rgba(71,85,105,0.3); color: #e2e8f0; border-radius: 1rem; border-bottom-left-radius: 0.25rem; padding: 0.75rem 1rem; font-size: 0.875rem; max-width: 75%; line-height: 1.6; }
+    .chat-bubble-ai h1,.chat-bubble-ai h2,.chat-bubble-ai h3 { color: #f1f5f9; font-weight: 600; margin: 0.75rem 0 0.4rem; line-height: 1.3; }
+    .chat-bubble-ai h1 { font-size: 1rem; } .chat-bubble-ai h2 { font-size: 0.9375rem; } .chat-bubble-ai h3 { font-size: 0.875rem; color: #cbd5e1; }
+    .chat-bubble-ai p { margin: 0.35rem 0; }
+    .chat-bubble-ai strong { color: #f1f5f9; font-weight: 600; }
+    .chat-bubble-ai em { color: #94a3b8; }
+    .chat-bubble-ai ul,.chat-bubble-ai ol { margin: 0.4rem 0 0.4rem 1.25rem; padding: 0; }
+    .chat-bubble-ai li { margin: 0.2rem 0; }
+    .chat-bubble-ai code { background: rgba(15,23,42,0.7); color: #5eead4; padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.8rem; font-family: monospace; }
+    .chat-bubble-ai pre { background: rgba(15,23,42,0.7); border: 1px solid #1e293b; border-radius: 0.5rem; padding: 0.75rem; overflow-x: auto; margin: 0.5rem 0; }
+    .chat-bubble-ai pre code { background: none; padding: 0; color: #94a3b8; }
+    .chat-bubble-ai blockquote { border-left: 3px solid #0d9488; margin: 0.5rem 0; padding: 0.25rem 0.75rem; color: #94a3b8; background: rgba(13,148,136,0.05); border-radius: 0 0.375rem 0.375rem 0; }
+    .chat-bubble-ai table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; font-size: 0.8125rem; }
+    .chat-bubble-ai th { background: rgba(15,23,42,0.6); color: #94a3b8; font-weight: 600; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em; padding: 0.4rem 0.6rem; border: 1px solid #334155; }
+    .chat-bubble-ai td { padding: 0.4rem 0.6rem; border: 1px solid #1e293b; color: #cbd5e1; }
+    .chat-bubble-ai tr:nth-child(even) td { background: rgba(30,41,59,0.3); }
+    .chat-bubble-ai a { color: #2dd4bf; text-decoration: underline; }
+    .chat-bubble-ai hr { border: none; border-top: 1px solid #1e293b; margin: 0.75rem 0; }
+    .glow-teal { box-shadow: 0 0 30px -10px rgba(0,137,123,0.4); }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <aside id="sidebar">
+    <div style="padding:1.25rem 1.5rem;border-bottom:1px solid #1e293b;">
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <div style="width:32px;height:32px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(13,148,136,0.18);overflow:hidden;padding:0;">
+          <img src="https://static1.lenskart.com/media/desktop/img/Sep23/13-Sep/lenskart-logo-new-144x144.png" alt="Lenskart Logo" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div>
+          <p style="font-weight:700;color:white;font-size:0.9375rem;line-height:1.2;">EyeAI</p>
+          <p style="font-size:0.7rem;color:#475569;">Buying Platform</p>
+        </div>
+      </div>
+    </div>
+    <nav style="flex:1;padding:0.75rem;padding-bottom:5rem;overflow-y:auto;" id="nav-container">
+      <p style="font-size:0.65rem;font-weight:600;color:#475569;text-transform:uppercase;letter-spacing:0.08em;padding:0 0.75rem;margin-bottom:0.75rem;margin-top:0.25rem;">Navigation</p>
+    </nav>
+    <div style="position:absolute;bottom:1rem;left:0.75rem;right:0.75rem;padding:0.625rem 0.875rem;background:rgba(15,23,42,0.55);backdrop-filter:blur(8px);border:1px solid rgba(71,85,105,0.25);border-radius:0.75rem;opacity:0.65;transition:opacity 0.2s;" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.65'">
+      <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:#475569;margin-bottom:0.35rem;">
+        <span id="bedrock-status-dot" style="width:8px;height:8px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0;" class="animate-pulse"></span>
+        <span id="bedrock-status-label">Checking Bedrock…</span>
+      </div>
+      <p style="font-size:0.7rem;color:#334155;margin:0;">📅 Data: Jan 2023 – Dec 2024</p>
+    </div>
+  </aside>
+  <div id="main-area">
+    <main id="content">
+      <div id="page-overview" class="page active"></div>
+      <div id="page-forecast" class="page"></div>
+      <div id="page-similarity" class="page"></div>
+      <div id="page-supply-chain" class="page"></div>
+      <div id="page-customer-signals" class="page"></div>
+      <div id="page-recommendations" class="page"></div>
+      <div id="page-assistant" class="page"></div>
+      <div id="page-data-quality" class="page"></div>
+    </main>
+  </div>
+</div>
+
+<script>
+// ─── Bedrock Status ──────────────────────────────────────────
+// Configure marked for clean rendering
+marked.setOptions({ gfm: true, breaks: true });
+(async function checkBedrockStatus() {
+  try {
+    const r = await fetch('/api/health');
+    const data = await r.json();
+    const dot = document.getElementById('bedrock-status-dot');
+    const label = document.getElementById('bedrock-status-label');
+    if (data.mock_bedrock) {
+      dot.style.background = '#facc15';
+      label.textContent = 'Mock Bedrock Active';
+      label.style.color = '#facc15';
+    } else {
+      dot.style.background = '#4ade80';
+      label.textContent = 'AWS Bedrock Live';
+      label.style.color = '#4ade80';
+    }
+  } catch(e) {
+    const label = document.getElementById('bedrock-status-label');
+    if (label) { label.textContent = 'Bedrock Unreachable'; label.style.color = '#f87171'; }
+  }
+})();
+
+// ─── API ────────────────────────────────────────────────────
+const API = {
+  async _get(path, params={}) {
+    const url = new URL('/api'+path, window.location.origin);
+    Object.entries(params).forEach(([k,v])=>{ if(v!=null&&v!=='') url.searchParams.set(k,v); });
+    const r = await fetch(url);
+    if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error(e.detail||r.statusText); }
+    return r.json();
+  },
+  async _post(path, body) {
+    const r = await fetch('/api'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error(e.detail||r.statusText); }
+    return r.json();
+  },
+  getOverview:          ()          => API._get('/overview'),
+  getAISummary:         ()          => API._get('/overview/ai-summary'),
+  getProducts:          (a=true)    => API._get('/products',{active_only:a}),
+  getForecast:          (s,sd,ed)   => API._get('/forecast',{skus:s?.join(','),start_date:sd,end_date:ed}),
+  getSimilarity:        (id,n=5)    => API._get('/similarity',{sku_id:id,top_n:n}),
+  getSpillover:         (id)        => API._get('/similarity/spillover',{sku_id:id}),
+  getSupplyChain:       ()          => API._get('/supply-chain'),
+  getCustomerSignals:   ()          => API._get('/customer-signals'),
+  getRecommendations:   (u,p)       => API._get('/recommendations',{urgency:u?.join(','),price_point:p?.join(',')}),
+  explainSku:           (id)        => API._get('/recommendations/explain/'+id),
+  sendChatMessage:      (m,h)       => API._post('/chat',{message:m,history:h}),
+  getDataQuality:       ()          => API._get('/data-quality'),
+};
+
+// ─── ROUTER ─────────────────────────────────────────────────
+const PAGES = ['overview','forecast','similarity','supply-chain','customer-signals','recommendations','assistant','data-quality'];
+const pageRenderers = {}, pageRendered = {};
+let currentPage = 'overview';
+
+function navigate(page) {
+  if(!PAGES.includes(page)) page='overview';
+  currentPage = page;
+  PAGES.forEach(p => document.getElementById('page-'+p)?.classList.toggle('active', p===page));
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.toggle('active', el.dataset.page===page));
+  if(!pageRendered[page] && pageRenderers[page]) { pageRenderers[page](); pageRendered[page]=true; }
+  history.replaceState(null,'','#'+page);
+}
+window.addEventListener('hashchange', ()=> navigate(location.hash.replace('#','')||'overview'));
+
+// ─── UI HELPERS ──────────────────────────────────────────────
+const H = {
+  spinner: (l='Loading...') => `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:16rem;gap:1rem;"><div style="position:relative;width:56px;height:56px;"><div style="position:absolute;inset:0;border-radius:50%;border:4px solid #334155;"></div><div style="position:absolute;inset:0;border-radius:50%;border:4px solid #0d9488;border-top-color:transparent;" class="animate-spin"></div></div><p style="color:#94a3b8;font-size:0.875rem;">${l}</p></div>`,
+  error: (m='Failed to load.') => `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:16rem;gap:1rem;text-align:center;"><div style="font-size:2rem;">⚠️</div><p style="color:#f87171;font-weight:600;">Something went wrong</p><p style="color:#64748b;font-size:0.875rem;max-width:20rem;">${m}</p></div>`,
+  badge: b => { const m={critical:'badge-critical',high:'badge-high',medium:'badge-medium',low:'badge-low'}; return `<span class="badge ${m[(b||'').toLowerCase()]||'badge-low'}">${b||'unknown'}</span>`; },
+  bar: (v, c='#0d9488', w='5rem') => `<div style="display:flex;align-items:center;gap:0.5rem;"><div class="progress-bar" style="width:${w};"><div class="progress-fill" style="width:${Math.round((v||0)*100)}%;background:${c};"></div></div><span style="font-size:0.75rem;color:#94a3b8;">${Math.round((v||0)*100)}%</span></div>`,
+  h1: (t,s) => `<div style="margin-bottom:2rem;"><h1 style="font-size:1.5rem;font-weight:700;color:white;margin-bottom:0.25rem;">${t}</h1><p style="font-size:0.875rem;color:#94a3b8;">${s}</p></div>`,
+  h2: t => `<h2 style="font-size:1.125rem;font-weight:600;color:white;margin-bottom:1rem;">${t}</h2>`,
+  card: o => {
+    const C={teal:{b:'rgba(13,148,136,0.3)',bg:'rgba(19,78,74,0.1)',ic:'rgba(19,78,74,0.4)',tx:'#2dd4bf'},red:{b:'rgba(239,68,68,0.3)',bg:'rgba(127,29,29,0.1)',ic:'rgba(127,29,29,0.4)',tx:'#f87171'},orange:{b:'rgba(249,115,22,0.3)',bg:'rgba(124,45,18,0.1)',ic:'rgba(124,45,18,0.4)',tx:'#fb923c'},green:{b:'rgba(34,197,94,0.3)',bg:'rgba(20,83,45,0.1)',ic:'rgba(20,83,45,0.4)',tx:'#4ade80'},blue:{b:'rgba(59,130,246,0.3)',bg:'rgba(30,58,138,0.1)',ic:'rgba(30,58,138,0.4)',tx:'#60a5fa'},purple:{b:'rgba(168,85,247,0.3)',bg:'rgba(88,28,135,0.1)',ic:'rgba(88,28,135,0.4)',tx:'#c084fc'}};
+    const c=C[o.color]||C.teal, dc=o.delta===0?'#64748b':o.delta>0?'#4ade80':'#f87171', di=o.delta===0?'—':o.delta>0?'↑':'↓';
+    return `<div class="metric-card" style="border:1px solid ${c.b};background:${c.bg};"><div style="display:flex;align-items:flex-start;justify-content:space-between;"><p style="font-size:0.7rem;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;">${o.label}</p>${o.icon?`<div style="width:32px;height:32px;border-radius:8px;background:${c.ic};display:flex;align-items:center;justify-content:center;font-size:0.875rem;">${o.icon}</div>`:''}</div><p style="font-size:1.5rem;font-weight:700;color:white;margin-top:0.25rem;">${o.value??'—'}</p>${o.dl?`<div style="display:flex;align-items:center;gap:0.25rem;font-size:0.75rem;font-weight:500;color:${dc};"><span>${di}</span><span>${o.dl}</span></div>`:''}</div>`;
+  },
+  table: (headers, rows, td) => `<div style="overflow-x:auto;"><table style="width:100%;text-align:left;border-collapse:collapse;"><thead><tr style="border-bottom:1px solid rgba(71,85,105,0.5);">${headers.map(h=>`<th class="table-head">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr class="table-row">${td(r)}</tr>`).join()||`<tr><td colspan="${headers.length}" style="text-align:center;padding:2rem;color:#475569;">No data</td></tr>`}</tbody></table></div>`,
+};
+
+// ─── CHARTS ─────────────────────────────────────────────────
+Chart.defaults.color='#94a3b8'; Chart.defaults.borderColor='#334155';
+const CI={};
+const TP = { backgroundColor:'#1e293b', borderColor:'#334155', borderWidth:1, titleColor:'#94a3b8', bodyColor:'#e2e8f0' };
+function dc(id){ if(CI[id]){CI[id].destroy();delete CI[id];} }
+function barChart(id,labels,datasets,opts={}){
+  dc(id); const ctx=document.getElementById(id)?.getContext('2d'); if(!ctx)return;
+  CI[id]=new Chart(ctx,{type:'bar',data:{labels,datasets},options:{indexAxis:opts.h?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:opts.legend??false,labels:{color:'#94a3b8',font:{size:11}}},tooltip:TP},scales:{x:{grid:{color:'#1e293b'},ticks:{color:'#94a3b8',font:{size:10}},...(opts.x||{})},y:{grid:{color:opts.h?'transparent':'#1e293b'},ticks:{color:'#94a3b8',font:{size:10}},...(opts.y||{})}}}});
+}
+function lineChart(id,labels,datasets){
+  dc(id); const ctx=document.getElementById(id)?.getContext('2d'); if(!ctx)return;
+  CI[id]=new Chart(ctx,{type:'line',data:{labels,datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,labels:{color:'#94a3b8',font:{size:11}}},tooltip:TP},scales:{x:{grid:{color:'#1e293b'},ticks:{color:'#94a3b8',font:{size:10},maxTicksLimit:12}},y:{grid:{color:'#1e293b'},ticks:{color:'#94a3b8',font:{size:10}}}}}});
+}
+function pieChart(id,labels,data,colors){
+  dc(id); const ctx=document.getElementById(id)?.getContext('2d'); if(!ctx)return;
+  CI[id]=new Chart(ctx,{type:'doughnut',data:{labels,datasets:[{data,backgroundColor:colors,borderColor:'#020617',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{color:'#94a3b8',font:{size:11},padding:12}},tooltip:TP}}});
+}
+function scatterChart(id,datasets){
+  dc(id); const ctx=document.getElementById(id)?.getContext('2d'); if(!ctx)return;
+  CI[id]=new Chart(ctx,{type:'scatter',data:{datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,labels:{color:'#94a3b8',font:{size:11}}},tooltip:{...TP,callbacks:{label:c=>{const d=c.raw;return`${d.label||''}: (${d.x?.toFixed(2)}, ${d.y?.toFixed(2)})`;}}}},scales:{x:{grid:{color:'#1e293b'},ticks:{color:'#94a3b8',font:{size:10}}},y:{grid:{color:'#1e293b'},ticks:{color:'#94a3b8',font:{size:10}}}}}});
+}
+
+// ─── SIDEBAR ─────────────────────────────────────────────────
+const NAV=[{p:'overview',i:'📊',l:'Executive Overview'},{p:'forecast',i:'📈',l:'Demand Forecasting'},{p:'similarity',i:'🔍',l:'Product Similarity'},{p:'supply-chain',i:'🚚',l:'Supply Chain'},{p:'customer-signals',i:'⚡',l:'Customer Signals'},{p:'recommendations',i:'🛒',l:'Buy Recommendations'},{p:'assistant',i:'🤖',l:'AI Buying Assistant'},{p:'data-quality',i:'🗄️',l:'Data Quality'}];
+const nav=document.getElementById('nav-container');
+NAV.forEach(({p,i,l})=>{ const a=document.createElement('a'); a.className='nav-item'; a.dataset.page=p; a.href='#'+p; a.innerHTML=`<span style="font-size:1rem;flex-shrink:0;">${i}</span><span style="flex:1;">${l}</span>`; a.addEventListener('click',e=>{e.preventDefault();navigate(p);}); nav.appendChild(a); });
+
+// ─── PAGE: OVERVIEW ──────────────────────────────────────────
+pageRenderers['overview'] = async function(){
+  const el=document.getElementById('page-overview');
+  el.innerHTML=H.spinner('Loading executive overview...');
+  try{
+    const d=await API.getOverview();
+    const {kpis={},top_recommendations=[],frame_mix=[]}=d;
+    const UC={critical:'#ef4444',high:'#f97316',medium:'#eab308',low:'#22c55e'};
+    const PC=['#00897b','#26a69a','#4db6ac','#80cbc4','#26c6da','#00bcd4','#0097a7'];
+    el.innerHTML=`${H.h1('Executive Overview','Real-time buying intelligence dashboard')}
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
+      ${H.card({label:'Critical SKUs',value:kpis.critical_skus??0,icon:'⚠️',color:'red',dl:`${kpis.at_risk_skus??0} at risk`,delta:-1})}
+      ${H.card({label:'Revenue at Risk',value:'$'+(kpis.revenue_at_risk_usd??0).toLocaleString(),icon:'💰',color:'orange',dl:'-2.3% vs last week',delta:-1})}
+      ${H.card({label:'Overstock Cost',value:'$'+(kpis.overstock_cost_usd??0).toLocaleString(),icon:'📦',color:'purple',dl:'+$1,200 this week',delta:1})}
+      ${H.card({label:'Forecast Accuracy',value:(kpis.forecast_accuracy_pct??0)+'%',icon:'🎯',color:'teal',dl:'+1.2pp vs last cycle',delta:1})}
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:1.5rem;margin-bottom:2rem;">
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('Top 15 Recommendations by Urgency')}<div style="height:380px;"><canvas id="ch-urg"></canvas></div></div>
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('Recommendation Mix by Frame')}${frame_mix.length?'<div style="height:280px;"><canvas id="ch-pie"></canvas></div>':'<p style="color:#475569;text-align:center;padding:5rem 0;">No frame data</p>'}</div>
+    </div>
+    <div class="glass-card" style="padding:1.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">${H.h2('✨ AI Executive Summary')}<button class="btn-ghost" id="ai-btn" onclick="doAI()">Refresh Summary</button></div>
+      <div id="ai-area"><div style="border:1px dashed #334155;border-radius:0.75rem;padding:1.5rem;text-align:center;"><p style="color:#475569;font-size:0.875rem;">Click "Refresh Summary" to generate an AI executive summary powered by AWS Bedrock.</p></div></div>
+    </div>`;
+    const top15=top_recommendations.slice(0,15);
+    barChart('ch-urg',top15.map(r=>r.sku_id),[{label:'Urgency',data:top15.map(r=>r.urgency_score??0),backgroundColor:top15.map(r=>UC[r.urgency_band]||'#00897b'),borderRadius:4}],{h:true});
+    if(frame_mix.length) pieChart('ch-pie',frame_mix.map(f=>f.frame_shape),frame_mix.map(f=>f.count),PC);
+    window.doAI=async()=>{ const btn=document.getElementById('ai-btn'),area=document.getElementById('ai-area'); btn.textContent='Generating...';btn.disabled=true; try{ const r=await API.getAISummary(); area.innerHTML=`<div class="chat-bubble-ai" style="background:rgba(19,78,74,0.2);border:1px solid rgba(13,148,136,0.3);border-radius:0.75rem;padding:1rem;max-width:100%;">${marked.parse(r.summary)}</div>`; }catch{ area.innerHTML='<p style="color:#f87171;">Failed to load AI summary.</p>'; }finally{ btn.textContent='Refresh Summary';btn.disabled=false; } };
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── PAGE: FORECAST ───────────────────────────────────────────
+pageRenderers['forecast'] = async function(){
+  const el=document.getElementById('page-forecast');
+  el.innerHTML=H.spinner('Loading products...');
+  try{
+    const pd=await API.getProducts();
+    const skus=pd?.products?.map(p=>p.sku_id)??[];
+    let sel=[],sd='2024-01-01',ed='2024-12-31',sq='',tab=0;
+    const LC=['#00897b','#26c6da','#7c3aed','#f97316','#ec4899'];
+
+    function rp(){
+      const filt=skus.filter(s=>s.toLowerCase().includes(sq.toLowerCase())).slice(0,50);
+      el.innerHTML=`${H.h1('Demand Forecasting','XGBoost time-series demand forecast with confidence intervals')}
+      <div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">
+        <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+          <div style="flex:1;min-width:200px;">
+            <label style="font-size:0.7rem;color:#94a3b8;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;display:block;margin-bottom:0.5rem;">Select SKUs (up to 5)</label>
+            <input class="input-field" id="sq" placeholder="Search SKUs..." value="${sq}" style="margin-bottom:0.75rem;" />
+            <div style="max-height:10rem;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:0.375rem;">${filt.map(s=>`<button class="sku-chip ${sel.includes(s)?'selected':''}" onclick="tSku('${s}')">${s}</button>`).join('')}</div>
+            ${sel.length?`<p style="font-size:0.75rem;color:#2dd4bf;margin-top:0.5rem;">${sel.length} selected: ${sel.join(', ')}</p>`:''}
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;min-width:180px;">
+            <label style="font-size:0.7rem;color:#94a3b8;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;">Date Range</label>
+            <div><p style="font-size:0.75rem;color:#64748b;margin-bottom:0.25rem;">Start</p><input type="date" class="input-field" id="sd" value="${sd}" /></div>
+            <div><p style="font-size:0.75rem;color:#64748b;margin-bottom:0.25rem;">End</p><input type="date" class="input-field" id="ed" value="${ed}" /></div>
+            <button class="btn-primary" id="rfb" style="justify-content:center;" ${sel.length?'':'disabled'} onclick="rForecast()">▶ Run Forecast</button>
+          </div>
+        </div>
+      </div>
+      <div id="fr"></div>`;
+      document.getElementById('sq').addEventListener('input',e=>{sq=e.target.value;rp();});
+      document.getElementById('sd').addEventListener('change',e=>sd=e.target.value);
+      document.getElementById('ed').addEventListener('change',e=>ed=e.target.value);
+    }
+    window.tSku=s=>{ sel=sel.includes(s)?sel.filter(x=>x!==s):sel.length<5?[...sel,s]:sel; rp(); };
+    window.rForecast=async()=>{
+      const btn=document.getElementById('rfb'),res=document.getElementById('fr');
+      btn.textContent='Loading...';btn.disabled=true;
+      res.innerHTML=H.spinner('Fetching forecast data...');
+      try{
+        const fd=await API.getForecast(sel,document.getElementById('sd').value,document.getElementById('ed').value);
+        const dates=[...new Set([...(fd.historical||[]).map(d=>d.date),...(fd.forecast||[]).map(d=>d.date)])].sort();
+        const sets=sel.flatMap((sku,i)=>{
+          const hm=Object.fromEntries((fd.historical||[]).filter(d=>d.sku_id===sku).map(d=>[d.date,d.quantity_sold]));
+          const fm=Object.fromEntries((fd.forecast||[]).filter(d=>d.sku_id===sku).map(d=>[d.date,d.forecasted_demand]));
+          return[{label:`${sku} (actual)`,data:dates.map(d=>hm[d]??null),borderColor:LC[i],backgroundColor:'transparent',borderWidth:2,pointRadius:0,spanGaps:true},
+                 {label:`${sku} (forecast)`,data:dates.map(d=>fm[d]??null),borderColor:LC[i],backgroundColor:'transparent',borderWidth:2,borderDash:[6,3],pointRadius:0,spanGaps:true}];
+        });
+        const sea=fd.seasonality??[], fi=fd.feature_importance??[], met=fd.metrics??{};
+        function rRes(){
+          res.innerHTML=`<div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">${H.h2('Historical Sales vs Forecast')}<div style="height:400px;"><canvas id="ch-fc"></canvas></div></div>
+          <div class="tab-bar">${['Feature Importance','Seasonality','Model Metrics'].map((t,i)=>`<button class="tab-btn ${i===tab?'active':''}" onclick="sft(${i})">${t}</button>`).join('')}</div>
+          <div id="ft"></div>`;
+          lineChart('ch-fc',dates.map(d=>d.slice(5)),sets);
+          rft();
+        }
+        window.sft=i=>{tab=i;rRes();};
+        window.rft=()=>{
+          const tc=document.getElementById('ft');
+          if(tab===0){ if(fi.length){ tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;">${H.h2('Feature Importances')}<div style="height:380px;"><canvas id="ch-fi"></canvas></div></div>`; barChart('ch-fi',fi.map(f=>f.feature),[{label:'Importance',data:fi.map(f=>f.importance),backgroundColor:'#00897b',borderRadius:4}],{h:true}); }else{ tc.innerHTML=`<div class="glass-card" style="padding:3rem;text-align:center;"><p style="color:#475569;">Train model first: <code style="color:#2dd4bf;">python pipeline.py --stage train</code></p></div>`; } }
+          else if(tab===1){ if(sea.length){ tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;">${H.h2('Monthly Seasonality Index')}<div style="height:300px;"><canvas id="ch-sea"></canvas></div></div>`; barChart('ch-sea',sea.map(s=>s.month_name),[{label:'Seasonality',data:sea.map(s=>s.seasonality_index),backgroundColor:sea.map(s=>s.seasonality_index>1?'#00897b':'#ef4444'),borderRadius:4}]); }else{ tc.innerHTML=`<div class="glass-card" style="padding:3rem;text-align:center;"><p style="color:#475569;">Insufficient data.</p></div>`; } }
+          else{ tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;">${H.h2('Model Metrics')}<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;">${Object.entries(met).map(([k,v])=>H.card({label:k,value:String(v),icon:'📉',color:'teal'})).join('')}</div></div>`; }
+        };
+        rRes();
+      }catch(e){ res.innerHTML=`<p style="color:#f87171;text-align:center;padding:2rem;">${e.message}</p>`; }
+      btn.textContent='▶ Run Forecast';btn.disabled=false;
+    };
+    rp();
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── PAGE: SIMILARITY ─────────────────────────────────────────
+pageRenderers['similarity'] = async function(){
+  const el=document.getElementById('page-similarity');
+  el.innerHTML=H.spinner('Building similarity index...');
+  try{
+    const d=await API.getSimilarity();
+    const {sku_list=[],cluster_summary=[],critical_oos_skus=[],pca_data=[]}=d;
+    const CC=['#00897b','#26c6da','#7c3aed','#f97316','#ec4899','#f59e0b','#10b981','#3b82f6'];
+    const cids=[...new Set(pca_data.map(d=>d.cluster_id))];
+    el.innerHTML=`${H.h1('Product Similarity & Clustering','Vector similarity, PCA clustering, and demand spillover analysis')}
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:1.5rem;margin-bottom:2rem;">
+      <div class="glass-card" style="padding:1.5rem;">
+        ${H.h2('Find Similar SKUs')}
+        <label style="font-size:0.7rem;color:#94a3b8;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;display:block;margin-bottom:0.5rem;">Select SKU</label>
+        <select class="select-field" id="sim-sel" style="width:100%;margin-bottom:1rem;" onchange="lSim(this.value)">
+          <option value="">— pick a SKU —</option>${sku_list.slice(0,100).map(s=>`<option>${s}</option>`).join('')}
+        </select>
+        <div id="sim-r"></div>
+        <div style="margin-top:1.25rem;">${H.h2('Cluster Summary')}<div style="max-height:13rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.5rem;">${cluster_summary.map((c,i)=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.75rem;background:rgba(51,65,85,0.3);border-radius:0.5rem;"><div style="display:flex;align-items:center;gap:0.5rem;"><span style="width:12px;height:12px;border-radius:50%;background:${CC[i%CC.length]};display:inline-block;"></span><span style="font-size:0.875rem;color:#cbd5e1;">${c.cluster_label}</span></div><span class="badge badge-low">${c.sku_count} SKUs</span></div>`).join('')}</div></div>
+      </div>
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('Product Cluster Map (PCA 2D)')}${pca_data.length?'<div style="height:380px;"><canvas id="ch-pca"></canvas></div>':'<p style="color:#475569;text-align:center;padding:5rem 0;">Build similarity index first.</p>'}</div>
+    </div>
+    <div class="glass-card" style="padding:1.5rem;">${H.h2('Demand Spillover — Stockout Coverage')}${critical_oos_skus.length?`<div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;"><select class="select-field" onchange="lSpill(this.value)"><option value="">— select critical SKU —</option>${critical_oos_skus.map(s=>`<option>${s}</option>`).join('')}</select></div><div id="spill-r"></div>`:'<div style="text-align:center;padding:2rem;"><span style="color:#4ade80;font-size:0.875rem;">✓ No critical stockout SKUs.</span></div>'}</div>`;
+
+    if(pca_data.length) scatterChart('ch-pca',cids.map((cid,i)=>({label:pca_data.find(d=>d.cluster_id===cid)?.cluster_label||`Cluster ${cid}`,data:pca_data.filter(d=>d.cluster_id===cid).map(d=>({x:d.PC1,y:d.PC2,label:d.sku_id})),backgroundColor:CC[i%CC.length]+'cc',pointRadius:5})));
+
+    window.lSim=async sku=>{
+      if(!sku)return; const a=document.getElementById('sim-r'); if(!a)return;
+      a.innerHTML=`<p style="font-size:0.75rem;color:#64748b;" class="animate-pulse">Finding similar SKUs...</p>`;
+      try{ const r=await API.getSimilarity(sku,5); const sim=r.similar??[]; if(!sim.length){a.innerHTML='<p style="font-size:0.75rem;color:#64748b;">No similar SKUs found.</p>';return;}
+        a.innerHTML=`<p style="font-size:0.75rem;color:#94a3b8;font-weight:600;margin-bottom:0.5rem;">Top ${sim.length} similar to <span style="color:#2dd4bf;">${sku}</span>:</p><div style="display:flex;flex-direction:column;gap:0.5rem;">${sim.map(s=>`<div style="display:flex;align-items:center;gap:0.5rem;"><span style="width:8px;height:8px;border-radius:50%;flex-shrink:0;background:${s.similarity_score>0.85?'#4ade80':s.similarity_score>0.7?'#facc15':'#f87171'};"></span><span style="font-size:0.875rem;color:white;font-weight:500;flex:1;">${s.similar_sku_id}</span>${H.bar(s.similarity_score,'#0d9488','4rem')}</div>`).join('')}</div>`;
+      }catch{ a.innerHTML='<p style="font-size:0.75rem;color:#f87171;">Error loading.</p>'; }
+    };
+    window.lSpill=async sku=>{
+      if(!sku)return; const a=document.getElementById('spill-r'); if(!a)return;
+      a.innerHTML=H.spinner('Loading candidates...');
+      try{ const r=await API.getSpillover(sku); const c=r.candidates??[]; if(!c.length){a.innerHTML='<p style="color:#64748b;font-size:0.875rem;">No candidates found.</p>';return;}
+        a.innerHTML=H.table(['Similar SKU','Similarity','Store','Days of Supply','On Hand'],c.slice(0,10),r=>`<td class="table-cell" style="color:#2dd4bf;font-weight:500;">${r.similar_sku_id}</td><td class="table-cell">${H.bar(r.similarity_score,'#0d9488','5rem')}</td><td class="table-cell" style="color:#94a3b8;">${r.store_id}</td><td class="table-cell"><span style="color:${r.days_of_supply>14?'#4ade80':'#fb923c'};">${r.days_of_supply?.toFixed(1)??'—'}d</span></td><td class="table-cell" style="color:#cbd5e1;">${r.quantity_on_hand??'—'}</td>`);
+      }catch{ a.innerHTML='<p style="color:#f87171;font-size:0.875rem;">Error loading spillover.</p>'; }
+    };
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── PAGE: SUPPLY CHAIN ───────────────────────────────────────
+pageRenderers['supply-chain'] = async function(){
+  const el=document.getElementById('page-supply-chain');
+  el.innerHTML=H.spinner('Analyzing supply chain...');
+  try{
+    const d=await API.getSupplyChain();
+    const {health={},supplier_risk=[],reorder_alerts=[],cost_opportunities=[],material_risk=[]}=d;
+    const RC={high:'#ef4444',medium:'#eab308',low:'#22c55e'};
+    el.innerHTML=`${H.h1('Supply Chain Intelligence','Supplier risk, reorder alerts, and cost optimisation')}
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
+      ${H.card({label:'Avg Lead Time',value:(health.avg_lead_time_days?.toFixed(0)??0)+' days',icon:'⏱️',color:'blue'})}
+      ${H.card({label:'High-Risk Suppliers',value:health.high_risk_supplier_count??0,icon:'⚠️',color:'red'})}
+      ${H.card({label:'Reorder Alerts',value:health.at_risk_sku_count??0,icon:'🔔',color:'orange'})}
+      ${H.card({label:'Capacity Slack Suppliers',value:health.capacity_slack_count??0,icon:'🏭',color:'teal'})}
+    </div>
+    <div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">${H.h2('Supplier Risk Assessment')}${H.table(['Supplier','Country','Lead Time','Reliability','Capacity','Risk Score','Risk Band'],supplier_risk,s=>`<td class="table-cell"><p style="font-weight:500;color:white;">${s.name}</p><p style="font-size:0.7rem;color:#475569;">${s.supplier_id}</p></td><td class="table-cell" style="color:#cbd5e1;">${s.country}</td><td class="table-cell" style="color:#cbd5e1;">${s.lead_time_days}d</td><td class="table-cell">${H.bar(s.reliability_score,'#0d9488','4rem')}</td><td class="table-cell">${H.bar(s.capacity_utilization,s.capacity_utilization>0.85?'#ef4444':'#22c55e','4rem')}</td><td class="table-cell" style="font-weight:600;color:${RC[s.risk_band]||'#94a3b8'};">${s.risk_score?.toFixed(3)??'—'}</td><td class="table-cell">${H.badge(s.risk_band)}</td>`)}</div>
+    <div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">${H.h2('Reorder Urgency Timeline')}${reorder_alerts.length?'<div style="height:400px;"><canvas id="ch-ro"></canvas></div>':'<p style="color:#4ade80;text-align:center;padding:2.5rem;font-weight:500;">✓ No urgent reorder alerts.</p>'}</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('💰 Cost Opportunity Alerts')}${cost_opportunities.length?H.table(Object.keys(cost_opportunities[0]).slice(0,4),cost_opportunities.slice(0,8),r=>Object.values(r).slice(0,4).map(v=>`<td class="table-cell" style="color:#cbd5e1;">${typeof v==='number'?v.toFixed(2):(v??'—')}</td>`).join('')):'<p style="color:#475569;text-align:center;padding:2.5rem;">No alerts.</p>'}</div>
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('Material Concentration Risk')}${material_risk.length?H.table(Object.keys(material_risk[0]).slice(0,5),material_risk.slice(0,8),r=>Object.entries(r).slice(0,5).map(([k,v])=>{const n=typeof v==='number'?v:parseFloat(v);return`<td class="table-cell">${!isNaN(n)&&n>0?`<span style="font-weight:600;color:${n>10?'#f87171':n>5?'#fb923c':'#4ade80'};">${n}</span>`:`<span style="color:#94a3b8;">${v??'—'}</span>`}</td>`;}).join('')):'<p style="color:#475569;text-align:center;padding:2.5rem;">No risks detected.</p>'}</div>
+    </div>`;
+    if(reorder_alerts.length) barChart('ch-ro',reorder_alerts.map(r=>r.sku_id),[{label:'Days Until Stockout',data:reorder_alerts.map(r=>r.days_until_stockout),backgroundColor:reorder_alerts.map(r=>r.days_until_stockout<=7?'#ef4444':r.days_until_stockout<=14?'#f97316':r.days_until_stockout<=30?'#eab308':'#22c55e'),borderRadius:4}],{h:true});
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── PAGE: CUSTOMER SIGNALS ───────────────────────────────────
+pageRenderers['customer-signals'] = async function(){
+  const el=document.getElementById('page-customer-signals');
+  el.innerHTML=H.spinner('Analyzing customer signals...');
+  try{
+    const d=await API.getCustomerSignals();
+    const {trending=[],bubble_data=[],return_rates=[],age_frame_preferences=[]}=d;
+    const MC={accelerating:'#22c55e',stable:'#3b82f6',decelerating:'#ef4444'};
+    const RC=['#00897b','#26c6da','#7c3aed','#f97316','#ec4899','#f59e0b'];
+    const reasons=[...new Set(return_rates.map(r=>r.top_return_reason).filter(Boolean))];
+    el.innerHTML=`${H.h1('Customer Signals & Demand Intelligence','Trending SKUs, social signals, return analysis, and segment preferences')}
+    <div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">${H.h2('🔥 Trending SKUs')}${trending.length?`<div style="display:flex;flex-direction:column;">${trending.map((r,i)=>{const mc=MC[r.momentum]||'#00897b';const ml=r.momentum==='accelerating'?'▲ accelerating':r.momentum==='decelerating'?'▼ decelerating':'— stable';return`<div style="display:flex;align-items:center;gap:1rem;padding:0.75rem 0;border-bottom:1px solid rgba(71,85,105,0.3);"><span style="color:#475569;font-size:0.75rem;font-family:monospace;width:1.25rem;text-align:right;">${i+1}</span><div style="flex:1;min-width:0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.25rem;"><span style="font-weight:600;color:white;font-size:0.875rem;">${r.sku_id}</span><span style="font-size:0.7rem;color:${mc};border:1px solid ${mc}40;background:${mc}15;padding:0.1rem 0.4rem;border-radius:9999px;">${ml}</span></div><div class="progress-bar" style="width:100%;"><div class="progress-fill" style="width:${Math.min(100,(r.trend_score??0)*100)}%;background:${mc};"></div></div></div><span style="font-size:0.75rem;color:#94a3b8;font-family:monospace;flex-shrink:0;">${(r.trend_score??0).toFixed(3)}</span></div>`;}).join('')}</div>`:'<p style="color:#475569;text-align:center;padding:2.5rem;">Social signal data not available.</p>'}</div>
+    ${bubble_data.length?`<div class="glass-card" style="padding:1.5rem;margin-bottom:2rem;">${H.h2('📱 Social Signal Map')}<p style="font-size:0.75rem;color:#475569;margin-bottom:1rem;">Mentions vs Sentiment (colored by momentum)</p><div style="height:360px;"><canvas id="ch-bub"></canvas></div></div>`:''}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('🔄 Return Rate Analysis')}${return_rates.length?'<div style="height:360px;"><canvas id="ch-ret"></canvas></div>':'<p style="color:#475569;text-align:center;padding:5rem 0;">No return data available.</p>'}</div>
+      <div class="glass-card" style="padding:1.5rem;">${H.h2('👥 Segment Preferences')}${age_frame_preferences.length?H.table(Object.keys(age_frame_preferences[0]),age_frame_preferences,(row)=>Object.entries(row).map(([k,v],j)=>{const n=typeof v==='number'?v:parseFloat(v);const ih=!isNaN(n)&&j>0;return`<td class="table-cell" style="${ih?`background:rgba(0,137,123,${Math.min(1,n*3)});color:${n>0.2?'#fff':'#94a3b8'};`:''}">${ih?n.toFixed(2):(v??'—')}</td>`;}).join('')):'<p style="color:#475569;text-align:center;padding:5rem 0;">No segment data.</p>'}</div>
+    </div>`;
+    if(bubble_data.length){const g={accelerating:[],stable:[],decelerating:[]};bubble_data.forEach(d=>{(g[d.momentum]||g.stable).push({x:d.mention_count_4wk_avg,y:d.sentiment_score,label:d.sku_id});});scatterChart('ch-bub',[{label:'Accelerating',data:g.accelerating,backgroundColor:'#22c55ecc',pointRadius:7},{label:'Stable',data:g.stable,backgroundColor:'#3b82f6cc',pointRadius:7},{label:'Decelerating',data:g.decelerating,backgroundColor:'#ef4444cc',pointRadius:7}]);}
+    if(return_rates.length) barChart('ch-ret',return_rates.map(r=>r.sku_id),[{label:'Return Rate %',data:return_rates.map(r=>r.return_rate_pct),backgroundColor:return_rates.map(r=>RC[reasons.indexOf(r.top_return_reason)%RC.length]||'#00897b'),borderRadius:4}],{h:true});
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── PAGE: RECOMMENDATIONS ─────────────────────────────────────
+pageRenderers['recommendations'] = async function(){
+  const el=document.getElementById('page-recommendations');
+  const UB=['critical','high','medium','low'],PP=['budget','mid','premium','luxury'];
+  let uf=['critical','high'],pf=[...PP],tab='recommendations';
+  async function rp(){
+    el.innerHTML=H.spinner('Loading recommendations...');
+    try{
+      const d=await API.getRecommendations(uf,pf);
+      const recs=d?.recommendations??[],clr=d?.clearance_alerts??[],skuList=recs.map(r=>r.sku_id).slice(0,30);
+      function render(){
+        el.innerHTML=`${H.h1('Buy Recommendations','AI-powered buying signals ranked by urgency and margin')}
+        <div class="glass-card" style="padding:1.25rem;margin-bottom:2rem;">
+          <p style="font-size:0.875rem;font-weight:600;color:white;margin-bottom:1rem;">🔽 Filters</p>
+          <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+            <div><p style="font-size:0.7rem;color:#64748b;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;margin-bottom:0.5rem;">Urgency Band</p><div style="display:flex;gap:0.5rem;flex-wrap:wrap;">${UB.map(b=>`<button class="filter-chip ${uf.includes(b)?'active-'+b:''}" onclick="tuf('${b}')">${b}</button>`).join('')}</div></div>
+            <div><p style="font-size:0.7rem;color:#64748b;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;margin-bottom:0.5rem;">Price Point</p><div style="display:flex;gap:0.5rem;flex-wrap:wrap;">${PP.map(p=>`<button class="filter-chip ${pf.includes(p)?'active-teal':''}" onclick="tpf('${p}')">${p}</button>`).join('')}</div></div>
+          </div>
+          <p style="font-size:0.75rem;color:#475569;margin-top:0.75rem;">Showing <span style="color:#2dd4bf;font-weight:600;">${recs.length}</span> recommendations</p>
+        </div>
+        <div class="tab-bar">${['recommendations','clearance','ai-explain'].map(t=>`<button class="tab-btn ${t===tab?'active':''}" onclick="stab('${t}')">${t==='ai-explain'?'🤖 AI Explain':t.replace('-',' ')}</button>`).join('')}</div>
+        <div id="rtc"></div>`;
+        window.tuf=b=>{uf=uf.includes(b)?uf.filter(v=>v!==b):[...uf,b];rp();};
+        window.tpf=p=>{pf=pf.includes(p)?pf.filter(v=>v!==p):[...pf,p];rp();};
+        window.stab=t=>{tab=t;render();};
+        const tc=document.getElementById('rtc');
+        if(tab==='recommendations'){
+          tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">${H.h2('Buy Recommendations')}<button class="btn-ghost" onclick="dlCSV()">⬇ Export CSV</button></div>${H.table(['SKU','Name','Frame','Urgency','Qty','Est. Cost','Margin','Supplier Risk','Confidence'],recs.slice(0,50),r=>`<td class="table-cell" style="font-family:monospace;color:#2dd4bf;font-size:0.75rem;">${r.sku_id}</td><td class="table-cell" style="color:#e2e8f0;max-width:8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.name??'—'}</td><td class="table-cell" style="color:#94a3b8;">${r.frame_shape??'—'}</td><td class="table-cell">${H.badge(r.urgency_band)}</td><td class="table-cell" style="font-weight:600;color:white;">${r.recommended_qty??'—'}</td><td class="table-cell" style="color:#cbd5e1;">$${r.estimated_cost_usd?.toLocaleString?.()??'—'}</td><td class="table-cell"><span style="color:${r.margin_pct>=0.3?'#4ade80':r.margin_pct>=0.15?'#facc15':'#f87171'}">${r.margin_pct!=null?(r.margin_pct*100).toFixed(1)+'%':'—'}</span></td><td class="table-cell">${H.badge(r.supplier_risk_band)}</td><td class="table-cell">${H.bar(r.confidence_score,'#0d9488','3.5rem')}</td>`)}</div>`;
+          window.dlCSV=()=>{ if(!recs.length)return; const h=Object.keys(recs[0]).join(','),rows=recs.map(r=>Object.values(r).map(v=>`"${v??''}"`).join(',')).join('\n'),b=new Blob([h+'\n'+rows],{type:'text/csv'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='buy_recommendations.csv';a.click(); };
+        }else if(tab==='clearance'){
+          tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;">${H.h2('🔴 Clearance Alerts')}${clr.length?H.table(Object.keys(clr[0]).slice(0,6),clr,r=>Object.values(r).slice(0,6).map(v=>`<td class="table-cell" style="color:#cbd5e1;">${typeof v==='number'?v.toFixed(2):(v??'—')}</td>`).join('')):'<p style="color:#4ade80;text-align:center;padding:2.5rem;font-weight:500;">✓ No clearance alerts.</p>'}</div>`;
+        }else{
+          tc.innerHTML=`<div class="glass-card" style="padding:1.5rem;">${H.h2('✨ AI SKU Explanation')}<div style="display:flex;gap:0.75rem;margin-bottom:1rem;"><select class="select-field" id="ex-sel" style="flex:1;"><option value="">— select a SKU —</option>${skuList.map(s=>`<option>${s}</option>`).join('')}</select><button class="btn-primary" id="ex-btn" onclick="runEx()">✨ Explain</button></div><div id="ex-r"></div></div>`;
+          window.runEx=async()=>{ const sku=document.getElementById('ex-sel').value;if(!sku)return;const btn=document.getElementById('ex-btn'),r=document.getElementById('ex-r');btn.textContent='Thinking...';btn.disabled=true;try{const res=await API.explainSku(sku);r.innerHTML=`<div class="chat-bubble-ai" style="background:rgba(19,78,74,0.2);border:1px solid rgba(13,148,136,0.3);border-radius:0.75rem;padding:1rem;max-width:100%;">${marked.parse(res.explanation)}</div>`;}catch{r.innerHTML='<p style="color:#f87171;font-size:0.875rem;">Failed to get AI explanation.</p>';}btn.textContent='✨ Explain';btn.disabled=false; };
+        }
+      }
+      render();
+    }catch(e){ el.innerHTML=H.error(e.message); }
+  }
+  rp();
+};
+
+// ─── PAGE: AI ASSISTANT ───────────────────────────────────────
+pageRenderers['assistant'] = function(){
+  const el=document.getElementById('page-assistant');
+  const SQ=['Which SKUs need restocking urgently?','What are our biggest overstock risks?','Which frame shapes are trending this season?','Which suppliers pose the highest risk?','Give me a weekly buying plan summary'];
+  let msgs=[],loading=false;
+  function render(){
+    el.innerHTML=`
+    <div style="display:flex;flex-direction:column;height:calc(100vh - 4rem);max-height:900px;">
+      ${H.h1('🤖 AI Buying Assistant','Powered by AWS Bedrock Claude — ask anything about your inventory and buying strategy')}
+      ${msgs.length===0?`<div style="margin-bottom:1rem;"><p style="font-size:0.7rem;color:#64748b;text-transform:uppercase;font-weight:600;letter-spacing:0.08em;margin-bottom:0.75rem;">💡 Suggested Questions</p><div style="display:flex;flex-wrap:wrap;gap:0.5rem;">${SQ.map(q=>`<button onclick="sm('${q.replace(/'/g,"\\'")}')" style="padding:0.5rem 0.75rem;background:rgba(30,41,59,0.6);border:1px solid rgba(71,85,105,0.5);border-radius:0.75rem;color:#cbd5e1;font-size:0.75rem;cursor:pointer;text-align:left;">${q}</button>`).join('')}</div></div>`:''}
+      <div class="glass-card" style="flex:1;padding:1rem;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;" id="cm">
+        ${msgs.length===0?`<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:0.75rem;text-align:center;"><div style="font-size:2.5rem;">✨</div><p style="color:#64748b;font-size:0.875rem;">Start a conversation with your AI buying assistant.</p></div>`:''}
+        ${msgs.map(m=>`<div style="display:flex;gap:0.75rem;justify-content:${m.role==='user'?'flex-end':'flex-start'};">${m.role==='assistant'?'<div style="width:32px;height:32px;border-radius:10px;background:rgba(19,78,74,0.4);border:1px solid rgba(13,148,136,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">🤖</div>':''}<div class="${m.role==='user'?'chat-bubble-user':'chat-bubble-ai'}">${m.role==='user'?m.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):marked.parse(m.content)}</div>${m.role==='user'?'<div style="width:32px;height:32px;border-radius:10px;background:rgba(51,65,85,0.6);border:1px solid rgba(71,85,105,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">👤</div>':''}</div>`).join('')}
+        ${loading?'<div style="display:flex;gap:0.75rem;"><div style="width:32px;height:32px;border-radius:10px;background:rgba(19,78,74,0.4);border:1px solid rgba(13,148,136,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">🤖</div><div class="chat-bubble-ai" style="display:flex;align-items:center;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:#0d9488;" class="animate-bounce"></span><span style="width:8px;height:8px;border-radius:50%;background:#0d9488;animation-delay:0.15s;" class="animate-bounce"></span><span style="width:8px;height:8px;border-radius:50%;background:#0d9488;animation-delay:0.3s;" class="animate-bounce"></span></div></div>':''}
+        <div id="cb"></div>
+      </div>
+      <div class="glass-card" style="padding:0.75rem;display:flex;gap:0.75rem;align-items:flex-end;">
+        <textarea id="ci" placeholder="Ask your buying question..." style="flex:1;background:transparent;color:#e2e8f0;font-size:0.875rem;resize:none;outline:none;border:none;max-height:8rem;min-height:2.5rem;line-height:1.5;padding:0.375rem 0.25rem;font-family:inherit;" rows="1"></textarea>
+        <div style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0;">
+          ${msgs.length>0?`<button onclick="cc()" style="padding:0.5rem;color:#64748b;background:none;border:none;cursor:pointer;border-radius:0.5rem;" title="Clear">🗑️</button>`:''}
+          <button class="btn-primary" id="sb" onclick="sm()" style="padding:0.5rem 0.75rem;" ${loading?'disabled':''}>➤</button>
+        </div>
+      </div>
+    </div>`;
+    document.getElementById('cb')?.scrollIntoView({behavior:'smooth'});
+    const ta=document.getElementById('ci');
+    if(ta) ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sm();}});
+  }
+  window.sm=async(t)=>{ const ta=document.getElementById('ci'); const txt=(t||ta?.value||'').trim(); if(!txt||loading)return; if(ta)ta.value=''; msgs.push({role:'user',content:txt});loading=true;render(); try{ const h=msgs.slice(0,-1).map(m=>({role:m.role,content:m.content})); const r=await API.sendChatMessage(txt,h); msgs.push({role:'assistant',content:r.answer}); }catch{ msgs.push({role:'assistant',content:'⚠️ Sorry, I encountered an error. Please try again.'}); } loading=false;render(); };
+  window.cc=()=>{msgs=[];render();};
+  render();
+};
+
+// ─── PAGE: DATA QUALITY ────────────────────────────────────────
+pageRenderers['data-quality'] = async function(){
+  const el=document.getElementById('page-data-quality');
+  el.innerHTML=H.spinner('Running data quality checks...');
+  try{
+    const d=await API.getDataQuality();
+    const report=d?.report??{};
+    const IC={products:'📦',suppliers:'🏭',sales:'💰',inventory:'🗄️',returns:'🔄',social_signals:'📱'};
+    el.innerHTML=`${H.h1('Data Quality & System Status','Dataset health checks and schema validation')}
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:1.5rem;margin-bottom:2rem;">
+      ${Object.entries(report).map(([ds,info])=>`<div class="glass-card" style="padding:1.5rem;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem;">
+          <div style="display:flex;align-items:center;gap:0.75rem;"><span style="font-size:1.5rem;">${IC[ds]||'📁'}</span><div><h3 style="font-weight:600;color:white;text-transform:capitalize;">${ds.replace('_',' ')}</h3>${info.date_range?`<p style="font-size:0.7rem;color:#475569;margin-top:2px;">📅 ${info.date_range[0]} → ${info.date_range[1]}</p>`:''}</div></div>
+          ${info.error?'<div style="color:#f87171;font-size:0.75rem;font-weight:500;">⚠️ Error</div>':'<div style="color:#4ade80;font-size:0.75rem;font-weight:500;">✓ OK</div>'}
+        </div>
+        ${info.error?`<p style="color:#f87171;font-size:0.875rem;background:rgba(127,29,29,0.2);border:1px solid rgba(185,28,28,0.3);border-radius:0.5rem;padding:0.75rem;">${info.error}</p>`:`
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
+            <div style="background:rgba(51,65,85,0.3);border-radius:0.75rem;padding:0.75rem;text-align:center;"><p style="font-size:0.7rem;color:#64748b;margin-bottom:0.25rem;">Rows</p><p style="font-size:1.25rem;font-weight:700;color:white;">${info.row_count?.toLocaleString()}</p></div>
+            <div style="background:rgba(51,65,85,0.3);border-radius:0.75rem;padding:0.75rem;text-align:center;"><p style="font-size:0.7rem;color:#64748b;margin-bottom:0.25rem;">Duplicates</p><p style="font-size:1.25rem;font-weight:700;color:${info.duplicate_count>0?'#fb923c':'#4ade80'};">${info.duplicate_count}</p></div>
+            <div style="background:rgba(51,65,85,0.3);border-radius:0.75rem;padding:0.75rem;text-align:center;"><p style="font-size:0.7rem;color:#64748b;margin-bottom:0.25rem;">Null Cols</p><p style="font-size:1.25rem;font-weight:700;color:${Object.values(info.null_pct_per_col||{}).some(v=>v>0)?'#facc15':'#4ade80'};">${Object.values(info.null_pct_per_col||{}).filter(v=>v>0).length}</p></div>
+          </div>
+          ${Object.entries(info.null_pct_per_col||{}).filter(([,v])=>v>0).length>0?`<div><p style="font-size:0.75rem;color:#94a3b8;font-weight:600;margin-bottom:0.5rem;">Columns with nulls:</p><div style="display:flex;flex-direction:column;gap:0.375rem;">${Object.entries(info.null_pct_per_col||{}).filter(([,v])=>v>0).map(([col,pct])=>`<div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:0.75rem;color:#94a3b8;width:8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${col}</span><div class="progress-bar" style="flex:1;"><div class="progress-fill" style="width:${pct}%;background:${pct>20?'#ef4444':pct>5?'#f97316':'#eab308'};"></div></div><span style="font-size:0.75rem;color:#94a3b8;width:3rem;text-align:right;">${pct.toFixed(1)}%</span></div>`).join('')}</div></div>`:'<div style="display:flex;align-items:center;gap:0.5rem;color:#4ade80;font-size:0.75rem;background:rgba(20,83,45,0.2);border:1px solid rgba(34,197,94,0.3);border-radius:0.5rem;padding:0.5rem 0.75rem;">✓ No null values detected</div>'}
+        `}
+      </div>`).join('')}
+    </div>
+    <div class="glass-card" style="padding:1.5rem;">${H.h2('🗄️ System Actions')}<p style="font-size:0.75rem;color:#475569;margin-bottom:1.25rem;">Run these commands in your terminal:</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">${[{i:'🔄',t:'Regenerate Synthetic Data',c:'python data/generate_synthetic_data.py',d:'Regenerate all synthetic datasets'},{i:'🤖',t:'Retrain Forecast Model',c:'python pipeline.py --stage train',d:'Retrain the XGBoost demand forecasting model (~2-5 min)'},{i:'🔁',t:'Rebuild Similarity Index',c:'python pipeline.py --stage similarity',d:'Rebuild product vector similarity index'}].map(a=>`<div style="background:rgba(30,41,59,0.6);border:1px solid rgba(71,85,105,0.5);border-radius:0.75rem;padding:1rem;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;"><span style="font-size:1.25rem;">${a.i}</span><p style="font-weight:500;color:white;font-size:0.875rem;">${a.t}</p></div><p style="font-size:0.75rem;color:#64748b;margin-bottom:0.75rem;">${a.d}</p><div style="background:#020617;border-radius:0.5rem;padding:0.5rem 0.75rem;"><code style="color:#2dd4bf;font-size:0.75rem;font-family:monospace;">${a.c}</code></div></div>`).join('')}</div>
+    </div>`;
+  }catch(e){ el.innerHTML=H.error(e.message); }
+};
+
+// ─── INIT ─────────────────────────────────────────────────────
+navigate(location.hash.replace('#','')||'overview');
+</script>
+</body>
+</html>

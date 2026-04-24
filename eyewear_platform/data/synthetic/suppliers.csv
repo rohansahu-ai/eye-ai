@@ -1,0 +1,26 @@
+supplier_id,name,country,lead_time_days,reliability_score,capacity_utilization,avg_unit_cost_multiplier,on_time_delivery_rate,min_order_qty,payment_terms_days
+SUP001,Supplier A0,Italy,63,0.791,0.852,1.124,0.861,50,120
+SUP002,Supplier B1,Italy,53,0.482,0.57,1.065,0.443,200,30
+SUP003,Supplier C2,Taiwan,56,0.429,0.702,1.023,0.414,300,120
+SUP004,Supplier D3,France,94,0.494,0.71,1.066,0.468,100,30
+SUP005,Supplier E4,USA,62,0.525,0.66,0.903,0.514,100,120
+SUP006,Supplier F5,Japan,49,0.775,0.76,0.925,0.813,100,45
+SUP007,Supplier G6,Japan,54,0.359,0.516,0.944,0.357,100,120
+SUP008,Supplier H7,Japan,87,0.939,0.939,1.059,0.952,50,30
+SUP009,Supplier I8,France,78,0.615,0.454,1.005,0.592,100,60
+SUP010,Supplier J9,Italy,76,0.556,0.856,0.936,0.516,200,120
+SUP011,Supplier K10,Taiwan,59,0.875,0.727,1.159,0.834,100,30
+SUP012,Supplier L11,Italy,76,0.851,0.535,0.981,0.912,300,45
+SUP013,Supplier M12,Japan,52,0.6,0.81,1.006,0.612,300,30
+SUP014,Supplier N13,Germany,59,0.995,0.446,0.993,0.97,300,45
+SUP015,Supplier O14,France,84,0.693,0.826,0.914,0.733,200,45
+SUP016,Supplier P15,France,82,0.872,0.724,1.106,0.796,100,90
+SUP017,Supplier Q16,Taiwan,45,0.724,0.461,1.007,0.688,500,45
+SUP018,Supplier R17,USA,47,0.377,0.444,0.856,0.357,100,30
+SUP019,Supplier S18,Italy,67,0.922,0.813,1.187,1.0,150,30
+SUP020,Supplier T19,Italy,99,0.913,0.561,1.136,0.951,150,120
+SUP021,Supplier U20,Taiwan,30,0.562,0.889,1.103,0.575,300,120
+SUP022,Supplier V21,Japan,70,0.858,0.819,1.154,0.773,200,45
+SUP023,Supplier W22,China,37,0.218,0.784,1.167,0.204,300,30
+SUP024,Supplier X23,USA,52,0.981,0.553,0.968,1.0,500,30
+SUP025,Supplier Y24,France,57,0.246,0.79,1.064,0.241,150,120

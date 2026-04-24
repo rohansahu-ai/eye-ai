@@ -1,0 +1,301 @@
+sku_id,name,frame_shape,material,color,price_point,gender,season_launched,is_active,supplier_id,cost_price,retail_price,category,launch_date
+SKU0001,Acetate Rectangle 1,oval,tr90,rose_gold,premium,men,SS24,True,SUP002,153.66,444.75,sunglasses,2024-03-17
+SKU0002,Wood Rectangle 2,square,titanium,brown,mid,women,SS24,False,SUP012,55.31,137.49,sunglasses,2023-08-13
+SKU0003,Stainless_Steel Oval 3,oversized,tr90,tortoise,premium,men,AW23,True,SUP012,165.38,384.02,optical,2022-05-29
+SKU0004,Stainless_Steel Square 4,oversized,titanium,brown,premium,unisex,SS23,True,SUP007,149.21,378.56,optical,2022-04-24
+SKU0005,Stainless_Steel Aviator 5,square,acetate,red,budget,women,AW23,False,SUP004,48.7,110.03,sunglasses,2024-02-04
+SKU0006,Tr90 Aviator 6,round,titanium,tortoise,luxury,women,AW24,True,SUP002,334.86,823.96,optical,2022-08-28
+SKU0007,Aluminium Rectangle 7,rectangle,titanium,silver,premium,women,AW24,False,SUP001,146.6,346.27,sunglasses,2023-11-05
+SKU0008,Stainless_Steel Cat Eye 8,cat_eye,acetate,brown,premium,women,AW24,False,SUP013,111.83,409.89,sunglasses,2022-05-01
+SKU0009,Tr90 Round 9,square,acetate,brown,budget,unisex,SS23,True,SUP003,27.22,68.65,sunglasses,2022-09-04
+SKU0010,Titanium Cat Eye 10,oval,aluminium,brown,mid,women,SS24,True,SUP024,46.7,138.17,sunglasses,2022-09-04
+SKU0011,Titanium Oval 11,round,tr90,navy,mid,unisex,SS23,True,SUP007,65.68,182.12,optical,2022-09-04
+SKU0012,Acetate Oval 12,rectangle,stainless_steel,brown,luxury,women,SS24,False,SUP017,301.54,791.82,optical,2023-08-20
+SKU0013,Stainless_Steel Rectangle 13,aviator,aluminium,brown,mid,unisex,AW23,True,SUP017,66.7,150.23,optical,2024-03-17
+SKU0014,Acetate Cat Eye 14,square,titanium,black,premium,men,SS24,True,SUP013,152.79,341.88,sunglasses,2024-03-10
+SKU0015,Wood Round 15,cat_eye,stainless_steel,green,mid,women,SS24,True,SUP023,51.57,167.63,optical,2023-10-15
+SKU0016,Acetate Rectangle 16,cat_eye,aluminium,rose_gold,budget,unisex,AW24,True,SUP003,28.93,72.92,sunglasses,2022-06-26
+SKU0017,Acetate Round 17,rectangle,tr90,black,mid,unisex,AW23,False,SUP006,67.73,169.33,sunglasses,2024-04-28
+SKU0018,Stainless_Steel Rectangle 18,wayfarer,stainless_steel,rose_gold,budget,women,AW23,True,SUP007,31.29,98.0,sunglasses,2023-04-23
+SKU0019,Tr90 Square 19,rectangle,titanium,rose_gold,premium,unisex,SS24,False,SUP004,89.09,324.22,optical,2023-04-23
+SKU0020,Aluminium Aviator 20,square,acetate,black,mid,men,SS23,False,SUP008,62.83,243.35,optical,2023-09-10
+SKU0021,Stainless_Steel Aviator 21,round,acetate,red,premium,women,SS23,True,SUP008,194.26,479.09,sunglasses,2023-11-05
+SKU0022,Acetate Wayfarer 22,wayfarer,acetate,gold,mid,men,SS24,True,SUP020,63.51,182.52,optical,2024-04-21
+SKU0023,Tr90 Oversized 23,cat_eye,wood,silver,luxury,men,AW24,False,SUP008,326.32,729.85,optical,2023-05-28
+SKU0024,Wood Square 24,wayfarer,tr90,rose_gold,premium,men,SS24,False,SUP022,131.66,383.86,optical,2023-06-18
+SKU0025,Wood Wayfarer 25,round,stainless_steel,clear,premium,men,AW24,False,SUP020,205.92,462.14,sunglasses,2023-10-15
+SKU0026,Aluminium Oversized 26,square,wood,green,budget,men,SS23,True,SUP023,31.8,95.68,optical,2022-08-14
+SKU0027,Acetate Cat Eye 27,aviator,acetate,green,mid,men,AW23,True,SUP003,91.79,224.57,optical,2022-09-25
+SKU0028,Wood Cat Eye 28,square,titanium,gold,budget,unisex,SS24,True,SUP025,23.3,87.29,optical,2023-07-02
+SKU0029,Aluminium Oversized 29,wayfarer,stainless_steel,clear,budget,men,AW23,False,SUP016,34.05,94.3,sunglasses,2022-02-27
+SKU0030,Stainless_Steel Aviator 30,oversized,aluminium,clear,premium,women,SS23,True,SUP025,132.17,322.04,optical,2022-10-09
+SKU0031,Stainless_Steel Wayfarer 31,square,tr90,rose_gold,premium,women,SS23,True,SUP009,188.64,433.72,sunglasses,2023-09-24
+SKU0032,Stainless_Steel Rectangle 32,round,aluminium,navy,luxury,unisex,AW24,True,SUP024,265.99,641.68,optical,2024-05-05
+SKU0033,Stainless_Steel Wayfarer 33,rectangle,titanium,black,mid,women,SS24,True,SUP015,54.14,210.32,sunglasses,2023-04-02
+SKU0034,Titanium Square 34,aviator,aluminium,green,mid,women,AW23,False,SUP002,75.26,231.89,sunglasses,2022-12-18
+SKU0035,Acetate Wayfarer 35,aviator,acetate,red,mid,unisex,AW23,True,SUP011,35.63,137.17,sunglasses,2023-01-22
+SKU0036,Aluminium Aviator 36,oversized,titanium,rose_gold,budget,women,SS23,True,SUP004,25.29,93.01,sunglasses,2023-08-27
+SKU0037,Stainless_Steel Wayfarer 37,oval,tr90,navy,budget,men,AW24,False,SUP024,21.82,56.66,sunglasses,2023-04-23
+SKU0038,Acetate Cat Eye 38,wayfarer,acetate,rose_gold,mid,men,SS23,False,SUP008,84.16,214.34,sunglasses,2022-01-16
+SKU0039,Tr90 Wayfarer 39,round,aluminium,black,budget,women,AW24,True,SUP006,22.63,55.91,sunglasses,2023-04-16
+SKU0040,Acetate Wayfarer 40,wayfarer,aluminium,brown,premium,men,SS23,True,SUP014,204.77,483.98,sunglasses,2022-12-18
+SKU0041,Tr90 Oval 41,cat_eye,tr90,green,mid,men,AW23,False,SUP011,54.85,137.86,optical,2023-09-10
+SKU0042,Titanium Round 42,round,titanium,red,premium,unisex,AW23,False,SUP003,200.87,489.72,optical,2024-02-11
+SKU0043,Stainless_Steel Round 43,round,acetate,red,premium,women,AW24,True,SUP021,116.96,450.22,optical,2024-04-28
+SKU0044,Titanium Aviator 44,rectangle,tr90,rose_gold,mid,women,SS23,True,SUP022,58.54,197.18,sunglasses,2023-06-18
+SKU0045,Tr90 Round 45,wayfarer,tr90,red,premium,unisex,AW23,True,SUP019,166.85,445.66,sunglasses,2022-11-13
+SKU0046,Stainless_Steel Round 46,oversized,wood,navy,premium,women,AW23,True,SUP016,189.22,448.78,optical,2023-01-22
+SKU0047,Aluminium Rectangle 47,square,tr90,brown,mid,unisex,AW23,False,SUP011,60.96,242.98,sunglasses,2022-06-05
+SKU0048,Stainless_Steel Wayfarer 48,oval,acetate,brown,budget,men,SS23,True,SUP014,23.91,67.74,sunglasses,2024-03-31
+SKU0049,Wood Oversized 49,wayfarer,acetate,red,premium,women,AW24,True,SUP014,153.23,397.52,optical,2024-01-14
+SKU0050,Acetate Oversized 50,square,wood,green,budget,unisex,AW23,False,SUP005,14.5,56.65,optical,2024-01-21
+SKU0051,Wood Aviator 51,oval,acetate,tortoise,budget,men,AW23,False,SUP003,30.76,93.13,sunglasses,2022-10-16
+SKU0052,Wood Aviator 52,wayfarer,aluminium,black,budget,unisex,AW23,False,SUP007,26.6,61.99,optical,2022-10-09
+SKU0053,Acetate Aviator 53,oval,acetate,rose_gold,premium,women,AW24,True,SUP012,150.36,391.24,sunglasses,2024-01-21
+SKU0054,Stainless_Steel Rectangle 54,round,wood,navy,premium,men,AW23,True,SUP005,116.96,393.11,optical,2023-04-23
+SKU0055,Stainless_Steel Aviator 55,oval,aluminium,brown,premium,men,AW23,True,SUP003,154.13,366.5,sunglasses,2023-09-10
+SKU0056,Titanium Oval 56,cat_eye,stainless_steel,rose_gold,premium,women,AW23,True,SUP022,121.66,380.66,sunglasses,2023-03-05
+SKU0057,Aluminium Oval 57,oval,acetate,navy,mid,men,AW23,True,SUP010,92.26,219.31,optical,2023-01-22
+SKU0058,Acetate Oval 58,wayfarer,aluminium,red,mid,women,SS23,True,SUP015,69.36,223.9,sunglasses,2023-07-09
+SKU0059,Wood Rectangle 59,cat_eye,titanium,silver,budget,unisex,SS24,True,SUP014,31.08,84.45,optical,2023-12-17
+SKU0060,Acetate Oversized 60,round,tr90,rose_gold,budget,unisex,SS23,False,SUP019,30.29,91.97,sunglasses,2022-10-23
+SKU0061,Stainless_Steel Aviator 61,wayfarer,aluminium,navy,premium,women,SS23,False,SUP019,147.24,482.81,optical,2023-12-10
+SKU0062,Titanium Cat Eye 62,round,wood,rose_gold,mid,women,SS23,True,SUP008,57.93,135.57,optical,2022-07-31
+SKU0063,Acetate Round 63,cat_eye,acetate,red,mid,men,AW23,True,SUP022,38.88,135.22,sunglasses,2022-12-18
+SKU0064,Stainless_Steel Oversized 64,wayfarer,wood,red,premium,men,AW24,True,SUP010,72.6,271.93,optical,2024-03-10
+SKU0065,Acetate Rectangle 65,square,acetate,navy,mid,unisex,SS24,True,SUP021,65.43,205.52,sunglasses,2024-04-21
+SKU0066,Aluminium Oval 66,rectangle,wood,rose_gold,mid,women,AW24,True,SUP011,68.64,174.42,sunglasses,2024-03-24
+SKU0067,Aluminium Wayfarer 67,oval,tr90,navy,mid,women,AW23,True,SUP003,90.8,220.66,sunglasses,2022-10-02
+SKU0068,Wood Oversized 68,square,titanium,tortoise,mid,unisex,AW24,False,SUP020,93.21,207.26,optical,2024-01-14
+SKU0069,Titanium Cat Eye 69,wayfarer,stainless_steel,rose_gold,budget,men,SS23,True,SUP001,22.69,73.35,optical,2024-03-31
+SKU0070,Tr90 Cat Eye 70,aviator,acetate,gold,mid,men,SS24,False,SUP020,78.52,236.79,optical,2024-05-12
+SKU0071,Titanium Oversized 71,cat_eye,aluminium,tortoise,budget,men,AW24,True,SUP002,28.67,103.38,optical,2022-01-16
+SKU0072,Aluminium Cat Eye 72,cat_eye,titanium,black,mid,women,SS24,True,SUP006,56.63,155.17,optical,2023-10-15
+SKU0073,Wood Cat Eye 73,wayfarer,titanium,navy,premium,unisex,AW24,True,SUP016,153.31,341.05,sunglasses,2024-05-26
+SKU0074,Wood Rectangle 74,oval,tr90,black,budget,unisex,AW23,True,SUP024,28.1,72.01,optical,2023-11-05
+SKU0075,Stainless_Steel Wayfarer 75,rectangle,wood,brown,budget,unisex,SS23,True,SUP011,22.52,61.03,optical,2022-07-24
+SKU0076,Tr90 Round 76,square,tr90,rose_gold,budget,women,AW24,False,SUP004,19.82,60.34,sunglasses,2023-11-05
+SKU0077,Titanium Wayfarer 77,aviator,tr90,silver,budget,men,SS23,True,SUP006,50.03,115.53,optical,2022-04-03
+SKU0078,Aluminium Aviator 78,oval,tr90,green,premium,women,AW24,True,SUP023,125.6,359.48,sunglasses,2023-02-26
+SKU0079,Wood Oval 79,wayfarer,aluminium,navy,mid,men,SS24,True,SUP019,47.02,169.83,sunglasses,2023-07-02
+SKU0080,Acetate Rectangle 80,cat_eye,stainless_steel,green,premium,unisex,AW24,True,SUP003,139.7,432.42,sunglasses,2023-02-05
+SKU0081,Tr90 Round 81,cat_eye,wood,green,premium,men,AW23,True,SUP010,102.28,388.25,sunglasses,2023-09-10
+SKU0082,Wood Cat Eye 82,oval,wood,black,mid,unisex,AW24,True,SUP007,70.19,241.7,sunglasses,2022-07-31
+SKU0083,Stainless_Steel Cat Eye 83,round,aluminium,gold,premium,women,SS23,False,SUP005,112.84,445.08,optical,2023-06-18
+SKU0084,Wood Square 84,wayfarer,aluminium,navy,budget,women,AW23,True,SUP022,28.47,83.56,optical,2023-07-23
+SKU0085,Stainless_Steel Oversized 85,round,wood,red,budget,women,SS23,True,SUP016,28.78,76.35,sunglasses,2023-07-09
+SKU0086,Wood Oversized 86,round,titanium,tortoise,budget,men,AW24,True,SUP005,37.94,119.06,sunglasses,2022-09-11
+SKU0087,Wood Cat Eye 87,wayfarer,wood,tortoise,premium,unisex,SS24,False,SUP017,143.47,429.44,sunglasses,2022-09-25
+SKU0088,Wood Round 88,wayfarer,wood,red,mid,unisex,AW24,True,SUP011,107.66,243.66,sunglasses,2022-08-14
+SKU0089,Titanium Cat Eye 89,wayfarer,titanium,red,budget,men,AW24,True,SUP002,23.34,58.29,optical,2023-02-12
+SKU0090,Aluminium Rectangle 90,cat_eye,wood,tortoise,mid,men,AW23,True,SUP012,82.58,230.57,sunglasses,2023-05-28
+SKU0091,Stainless_Steel Cat Eye 91,round,titanium,rose_gold,budget,women,SS23,True,SUP005,29.03,94.6,optical,2022-11-13
+SKU0092,Titanium Square 92,cat_eye,tr90,brown,premium,women,AW24,True,SUP007,120.44,280.48,optical,2022-12-25
+SKU0093,Stainless_Steel Rectangle 93,square,wood,tortoise,mid,unisex,AW23,False,SUP022,58.36,196.47,optical,2022-09-11
+SKU0094,Stainless_Steel Round 94,wayfarer,titanium,silver,mid,unisex,SS23,True,SUP018,65.91,209.19,optical,2022-07-10
+SKU0095,Aluminium Round 95,oversized,stainless_steel,silver,mid,men,AW24,False,SUP004,52.51,121.6,sunglasses,2023-07-30
+SKU0096,Acetate Cat Eye 96,oval,wood,brown,mid,men,AW24,True,SUP022,63.73,179.06,optical,2023-12-17
+SKU0097,Tr90 Aviator 97,wayfarer,stainless_steel,silver,mid,unisex,AW23,False,SUP015,90.57,227.3,optical,2022-09-11
+SKU0098,Titanium Wayfarer 98,round,aluminium,rose_gold,budget,women,AW24,False,SUP022,26.02,70.68,optical,2024-01-28
+SKU0099,Tr90 Square 99,wayfarer,acetate,gold,budget,women,SS23,True,SUP019,31.25,82.1,optical,2023-05-14
+SKU0100,Aluminium Cat Eye 100,round,wood,green,luxury,men,SS23,True,SUP009,250.88,809.62,optical,2022-05-29
+SKU0101,Aluminium Wayfarer 101,round,wood,tortoise,luxury,unisex,AW23,True,SUP014,212.18,711.35,optical,2022-11-20
+SKU0102,Wood Rectangle 102,wayfarer,aluminium,gold,premium,women,SS24,False,SUP014,150.84,479.61,sunglasses,2022-01-02
+SKU0103,Wood Oval 103,aviator,acetate,gold,budget,unisex,SS23,True,SUP018,29.43,104.69,optical,2022-01-30
+SKU0104,Tr90 Round 104,cat_eye,aluminium,red,luxury,men,SS23,True,SUP007,245.32,577.41,optical,2022-10-23
+SKU0105,Tr90 Oval 105,square,stainless_steel,red,premium,women,SS24,True,SUP009,153.1,499.26,sunglasses,2023-02-05
+SKU0106,Aluminium Oversized 106,round,stainless_steel,navy,premium,women,AW24,False,SUP007,170.21,469.8,optical,2023-12-03
+SKU0107,Titanium Rectangle 107,oval,stainless_steel,tortoise,mid,unisex,SS24,True,SUP008,64.08,156.91,sunglasses,2022-04-24
+SKU0108,Acetate Square 108,round,tr90,green,budget,men,AW24,True,SUP005,44.17,108.58,optical,2024-01-07
+SKU0109,Aluminium Aviator 109,oversized,tr90,rose_gold,budget,unisex,AW24,False,SUP001,19.4,57.45,sunglasses,2022-07-24
+SKU0110,Tr90 Oversized 110,wayfarer,stainless_steel,clear,luxury,unisex,SS24,True,SUP024,414.08,1199.37,sunglasses,2022-05-01
+SKU0111,Aluminium Cat Eye 111,rectangle,acetate,silver,mid,men,SS24,False,SUP002,92.72,206.54,optical,2023-09-10
+SKU0112,Acetate Oversized 112,oval,aluminium,red,budget,women,AW24,True,SUP023,36.76,95.51,sunglasses,2023-11-12
+SKU0113,Aluminium Rectangle 113,aviator,titanium,clear,mid,women,AW23,True,SUP001,54.41,131.76,sunglasses,2023-06-18
+SKU0114,Aluminium Aviator 114,oversized,acetate,gold,mid,men,SS23,False,SUP020,101.86,236.61,sunglasses,2022-04-10
+SKU0115,Tr90 Aviator 115,round,tr90,green,budget,unisex,AW24,True,SUP009,21.2,52.03,sunglasses,2022-04-10
+SKU0116,Aluminium Square 116,cat_eye,stainless_steel,gold,premium,unisex,AW23,True,SUP013,89.04,310.21,optical,2022-12-11
+SKU0117,Aluminium Rectangle 117,square,tr90,silver,premium,unisex,AW24,True,SUP008,103.57,285.76,optical,2023-01-29
+SKU0118,Acetate Aviator 118,square,aluminium,gold,premium,unisex,AW23,True,SUP013,120.1,444.19,sunglasses,2024-05-26
+SKU0119,Stainless_Steel Square 119,aviator,acetate,brown,mid,unisex,AW24,True,SUP012,55.48,145.77,optical,2022-09-11
+SKU0120,Acetate Oval 120,oval,titanium,gold,mid,women,SS23,True,SUP014,105.14,238.38,sunglasses,2022-06-19
+SKU0121,Titanium Cat Eye 121,rectangle,tr90,brown,mid,unisex,SS24,True,SUP010,72.38,205.31,optical,2024-04-14
+SKU0122,Titanium Cat Eye 122,oversized,wood,navy,mid,unisex,AW23,True,SUP014,41.97,124.7,sunglasses,2022-05-15
+SKU0123,Stainless_Steel Aviator 123,cat_eye,tr90,green,budget,men,AW23,True,SUP021,12.96,50.38,sunglasses,2022-01-23
+SKU0124,Tr90 Oval 124,rectangle,stainless_steel,red,mid,unisex,AW23,True,SUP011,56.0,126.72,sunglasses,2023-01-08
+SKU0125,Aluminium Round 125,cat_eye,tr90,black,budget,men,AW24,True,SUP010,25.01,92.41,optical,2022-12-18
+SKU0126,Aluminium Oversized 126,oversized,aluminium,red,mid,unisex,AW23,True,SUP004,57.89,224.19,sunglasses,2023-07-02
+SKU0127,Aluminium Round 127,oval,stainless_steel,tortoise,mid,unisex,AW24,False,SUP009,45.18,151.01,sunglasses,2024-02-11
+SKU0128,Aluminium Rectangle 128,oversized,aluminium,navy,budget,men,AW23,True,SUP004,28.8,109.46,optical,2024-03-31
+SKU0129,Acetate Round 129,rectangle,wood,silver,budget,women,SS23,True,SUP005,18.42,54.01,optical,2022-09-11
+SKU0130,Wood Wayfarer 130,oval,titanium,brown,mid,men,AW24,True,SUP024,79.17,224.13,sunglasses,2024-05-12
+SKU0131,Stainless_Steel Oval 131,round,titanium,green,budget,men,SS23,False,SUP003,35.92,114.95,optical,2023-07-09
+SKU0132,Acetate Cat Eye 132,cat_eye,wood,clear,luxury,men,AW23,True,SUP013,270.72,1040.48,optical,2022-02-27
+SKU0133,Titanium Rectangle 133,oval,titanium,rose_gold,mid,unisex,AW24,True,SUP021,57.39,210.76,sunglasses,2024-04-07
+SKU0134,Titanium Oversized 134,aviator,stainless_steel,red,mid,unisex,AW24,True,SUP024,74.84,228.94,optical,2022-05-01
+SKU0135,Acetate Oversized 135,square,titanium,silver,mid,men,AW24,True,SUP004,32.82,125.22,sunglasses,2023-06-04
+SKU0136,Wood Oval 136,aviator,tr90,gold,budget,unisex,AW23,False,SUP005,24.98,64.12,optical,2023-11-26
+SKU0137,Aluminium Wayfarer 137,rectangle,titanium,silver,luxury,women,AW24,False,SUP010,171.19,587.45,sunglasses,2022-08-07
+SKU0138,Aluminium Rectangle 138,cat_eye,tr90,navy,mid,men,AW23,True,SUP014,57.61,185.59,optical,2022-08-28
+SKU0139,Aluminium Oversized 139,cat_eye,aluminium,brown,premium,unisex,SS24,False,SUP024,143.47,436.3,sunglasses,2023-02-19
+SKU0140,Tr90 Round 140,cat_eye,wood,clear,budget,men,SS24,True,SUP006,31.37,94.1,sunglasses,2024-02-18
+SKU0141,Acetate Aviator 141,cat_eye,aluminium,gold,mid,unisex,SS23,True,SUP005,57.74,230.65,optical,2022-07-17
+SKU0142,Stainless_Steel Oval 142,cat_eye,acetate,silver,mid,men,AW23,False,SUP007,38.19,140.18,sunglasses,2023-08-06
+SKU0143,Tr90 Cat Eye 143,cat_eye,stainless_steel,red,luxury,women,AW23,True,SUP022,428.57,1014.23,optical,2023-02-05
+SKU0144,Titanium Rectangle 144,rectangle,titanium,rose_gold,mid,unisex,AW23,True,SUP001,36.31,145.1,optical,2022-04-10
+SKU0145,Tr90 Oversized 145,oval,aluminium,gold,mid,men,AW23,True,SUP010,54.57,155.2,optical,2023-09-17
+SKU0146,Wood Rectangle 146,rectangle,wood,red,budget,unisex,SS24,False,SUP003,34.68,99.69,sunglasses,2023-12-31
+SKU0147,Aluminium Cat Eye 147,square,titanium,rose_gold,mid,men,SS23,True,SUP004,78.34,247.43,optical,2023-05-21
+SKU0148,Aluminium Round 148,oval,tr90,red,mid,unisex,SS23,True,SUP023,67.08,199.5,sunglasses,2022-06-05
+SKU0149,Acetate Cat Eye 149,oversized,tr90,red,mid,men,AW24,True,SUP001,51.61,127.09,sunglasses,2022-05-15
+SKU0150,Acetate Aviator 150,aviator,stainless_steel,red,budget,men,AW23,True,SUP009,38.95,93.14,optical,2023-01-08
+SKU0151,Aluminium Oval 151,square,stainless_steel,navy,premium,unisex,SS24,True,SUP023,78.72,260.59,optical,2023-03-19
+SKU0152,Titanium Oval 152,wayfarer,acetate,green,premium,men,SS24,False,SUP016,148.14,471.04,sunglasses,2023-04-30
+SKU0153,Acetate Round 153,wayfarer,stainless_steel,red,budget,women,SS24,False,SUP002,29.75,99.67,sunglasses,2022-07-31
+SKU0154,Wood Round 154,oval,stainless_steel,gold,mid,women,AW23,False,SUP012,49.3,142.51,optical,2023-03-19
+SKU0155,Wood Oval 155,aviator,wood,black,budget,unisex,AW23,False,SUP025,21.81,56.42,optical,2022-09-18
+SKU0156,Acetate Aviator 156,oval,aluminium,silver,premium,men,AW24,True,SUP011,87.48,295.88,sunglasses,2023-08-27
+SKU0157,Aluminium Rectangle 157,oval,wood,brown,budget,women,AW24,True,SUP014,37.5,118.6,optical,2023-12-03
+SKU0158,Tr90 Cat Eye 158,oversized,acetate,navy,premium,men,AW23,True,SUP014,159.01,364.64,sunglasses,2023-07-30
+SKU0159,Stainless_Steel Square 159,square,aluminium,black,premium,unisex,SS24,True,SUP017,115.84,446.02,sunglasses,2022-01-02
+SKU0160,Tr90 Wayfarer 160,oval,stainless_steel,navy,premium,men,AW24,False,SUP005,139.98,409.1,optical,2024-05-19
+SKU0161,Tr90 Square 161,aviator,stainless_steel,tortoise,budget,unisex,SS23,True,SUP021,35.34,90.07,optical,2022-01-16
+SKU0162,Acetate Cat Eye 162,oversized,aluminium,navy,luxury,unisex,AW24,False,SUP025,168.5,601.59,sunglasses,2024-05-26
+SKU0163,Wood Rectangle 163,wayfarer,aluminium,navy,budget,men,AW23,True,SUP004,30.16,116.22,sunglasses,2022-01-30
+SKU0164,Acetate Aviator 164,round,acetate,brown,budget,men,AW24,True,SUP021,19.74,71.09,sunglasses,2023-04-02
+SKU0165,Tr90 Cat Eye 165,wayfarer,stainless_steel,rose_gold,mid,women,SS24,True,SUP021,84.64,195.14,optical,2022-04-03
+SKU0166,Aluminium Rectangle 166,cat_eye,wood,rose_gold,mid,men,AW24,True,SUP019,53.13,210.97,sunglasses,2022-03-20
+SKU0167,Aluminium Wayfarer 167,square,tr90,brown,premium,women,SS23,True,SUP010,118.61,412.31,sunglasses,2023-08-27
+SKU0168,Stainless_Steel Wayfarer 168,round,titanium,green,premium,men,SS23,True,SUP012,124.32,485.15,optical,2023-10-01
+SKU0169,Tr90 Wayfarer 169,oval,tr90,clear,mid,women,AW24,True,SUP021,37.91,139.3,sunglasses,2022-04-10
+SKU0170,Stainless_Steel Round 170,rectangle,aluminium,silver,luxury,unisex,SS24,False,SUP004,320.11,855.85,optical,2024-05-12
+SKU0171,Titanium Aviator 171,square,titanium,rose_gold,budget,unisex,SS24,True,SUP021,23.35,78.28,sunglasses,2022-10-09
+SKU0172,Tr90 Oversized 172,oversized,wood,silver,mid,women,SS23,True,SUP024,66.09,181.64,optical,2022-10-09
+SKU0173,Titanium Cat Eye 173,cat_eye,wood,navy,budget,women,SS23,False,SUP018,21.48,58.35,sunglasses,2022-09-18
+SKU0174,Titanium Oval 174,round,aluminium,tortoise,luxury,women,AW24,True,SUP009,249.36,593.87,sunglasses,2023-02-12
+SKU0175,Stainless_Steel Oversized 175,oversized,titanium,rose_gold,budget,unisex,AW23,False,SUP014,17.43,69.47,sunglasses,2022-06-05
+SKU0176,Titanium Aviator 176,rectangle,titanium,tortoise,budget,unisex,SS24,False,SUP002,30.01,71.33,optical,2023-01-08
+SKU0177,Tr90 Square 177,rectangle,tr90,navy,mid,women,AW23,True,SUP024,65.65,175.63,optical,2022-07-03
+SKU0178,Aluminium Oval 178,round,tr90,clear,luxury,men,AW23,True,SUP009,262.12,927.69,sunglasses,2022-02-13
+SKU0179,Aluminium Square 179,wayfarer,stainless_steel,red,premium,unisex,SS23,True,SUP002,165.34,408.66,sunglasses,2022-11-20
+SKU0180,Stainless_Steel Cat Eye 180,wayfarer,wood,rose_gold,premium,women,AW24,False,SUP020,148.63,352.95,optical,2023-08-13
+SKU0181,Acetate Cat Eye 181,wayfarer,wood,black,premium,women,AW24,False,SUP017,105.96,352.2,sunglasses,2023-11-05
+SKU0182,Stainless_Steel Aviator 182,wayfarer,titanium,gold,premium,unisex,SS23,False,SUP016,132.04,304.41,sunglasses,2022-11-06
+SKU0183,Titanium Rectangle 183,square,wood,tortoise,mid,women,AW23,True,SUP002,66.98,196.48,optical,2022-10-09
+SKU0184,Stainless_Steel Oversized 184,aviator,titanium,green,mid,women,SS24,True,SUP019,59.76,161.22,sunglasses,2023-11-26
+SKU0185,Stainless_Steel Oversized 185,square,stainless_steel,red,premium,men,AW23,True,SUP016,115.76,259.01,sunglasses,2023-08-20
+SKU0186,Tr90 Aviator 186,oversized,acetate,navy,premium,men,SS24,False,SUP020,114.29,354.6,sunglasses,2023-12-31
+SKU0187,Titanium Square 187,oval,stainless_steel,tortoise,mid,unisex,AW23,True,SUP021,74.95,181.64,sunglasses,2024-03-10
+SKU0188,Tr90 Round 188,cat_eye,aluminium,black,budget,women,SS23,True,SUP006,20.64,65.79,sunglasses,2023-12-24
+SKU0189,Tr90 Oversized 189,aviator,stainless_steel,red,premium,women,AW23,True,SUP006,161.11,393.11,optical,2024-03-31
+SKU0190,Stainless_Steel Aviator 190,oval,wood,silver,budget,women,SS24,False,SUP024,33.17,89.6,optical,2023-01-01
+SKU0191,Titanium Oversized 191,aviator,acetate,tortoise,luxury,women,SS23,False,SUP014,290.75,991.4,sunglasses,2022-12-11
+SKU0192,Wood Oval 192,square,tr90,tortoise,budget,unisex,AW24,True,SUP011,31.74,95.36,optical,2022-10-09
+SKU0193,Aluminium Aviator 193,square,stainless_steel,gold,budget,men,SS23,True,SUP008,30.0,95.67,sunglasses,2022-07-24
+SKU0194,Titanium Aviator 194,wayfarer,wood,brown,premium,men,SS23,True,SUP016,87.4,329.05,optical,2023-10-22
+SKU0195,Acetate Oval 195,square,aluminium,clear,budget,women,SS24,True,SUP019,26.91,105.12,sunglasses,2023-09-24
+SKU0196,Aluminium Wayfarer 196,wayfarer,tr90,gold,budget,men,SS24,True,SUP001,28.24,88.44,optical,2023-12-03
+SKU0197,Wood Rectangle 197,wayfarer,acetate,brown,mid,men,AW23,True,SUP014,44.69,176.08,sunglasses,2022-05-29
+SKU0198,Acetate Oversized 198,oval,stainless_steel,black,premium,unisex,AW23,True,SUP025,115.08,406.5,sunglasses,2023-03-05
+SKU0199,Aluminium Rectangle 199,oversized,acetate,black,budget,women,SS23,True,SUP008,29.73,75.25,sunglasses,2022-07-10
+SKU0200,Wood Cat Eye 200,round,stainless_steel,black,mid,men,SS24,True,SUP008,73.1,186.66,sunglasses,2024-02-25
+SKU0201,Wood Cat Eye 201,oversized,acetate,red,premium,unisex,AW23,True,SUP022,172.68,434.18,sunglasses,2022-08-21
+SKU0202,Aluminium Aviator 202,oversized,tr90,navy,luxury,women,SS23,False,SUP002,351.19,1120.48,optical,2022-05-08
+SKU0203,Titanium Oversized 203,oval,titanium,clear,mid,unisex,AW23,True,SUP010,102.61,239.74,optical,2023-05-14
+SKU0204,Titanium Round 204,wayfarer,titanium,black,budget,unisex,AW24,False,SUP012,31.44,85.25,sunglasses,2024-02-11
+SKU0205,Wood Wayfarer 205,round,acetate,black,budget,unisex,AW23,True,SUP020,23.78,86.42,optical,2024-03-17
+SKU0206,Tr90 Round 206,square,aluminium,clear,budget,men,AW24,True,SUP004,29.54,105.99,optical,2022-03-27
+SKU0207,Titanium Oversized 207,oversized,aluminium,tortoise,budget,unisex,AW23,True,SUP011,27.98,72.01,optical,2022-10-16
+SKU0208,Titanium Aviator 208,oval,wood,tortoise,premium,women,SS23,True,SUP004,130.73,459.35,optical,2022-05-15
+SKU0209,Wood Oval 209,cat_eye,acetate,navy,budget,men,AW23,True,SUP020,29.73,84.59,optical,2022-09-25
+SKU0210,Acetate Square 210,wayfarer,stainless_steel,brown,mid,unisex,AW23,True,SUP016,60.55,135.06,sunglasses,2023-04-16
+SKU0211,Tr90 Oval 211,oversized,aluminium,gold,premium,unisex,SS23,False,SUP013,67.22,268.01,optical,2022-09-04
+SKU0212,Acetate Oversized 212,round,tr90,rose_gold,mid,men,SS24,True,SUP010,58.13,229.46,optical,2022-02-27
+SKU0213,Tr90 Oval 213,round,acetate,brown,budget,unisex,AW23,True,SUP004,24.18,53.89,sunglasses,2023-03-26
+SKU0214,Stainless_Steel Oversized 214,oversized,acetate,rose_gold,premium,women,SS24,True,SUP024,117.47,320.15,sunglasses,2022-02-13
+SKU0215,Tr90 Wayfarer 215,rectangle,titanium,silver,premium,unisex,AW23,True,SUP017,91.85,333.53,sunglasses,2022-07-17
+SKU0216,Aluminium Oval 216,round,aluminium,black,premium,men,AW23,False,SUP008,125.94,293.25,optical,2022-01-02
+SKU0217,Titanium Rectangle 217,aviator,titanium,rose_gold,budget,unisex,AW23,False,SUP011,30.66,71.97,sunglasses,2022-03-13
+SKU0218,Stainless_Steel Rectangle 218,cat_eye,aluminium,clear,budget,unisex,SS23,True,SUP019,36.43,101.99,optical,2023-01-15
+SKU0219,Aluminium Oversized 219,oversized,wood,brown,luxury,unisex,SS24,True,SUP018,191.03,510.28,optical,2024-01-21
+SKU0220,Titanium Oversized 220,cat_eye,aluminium,clear,mid,unisex,SS23,True,SUP012,69.31,227.53,optical,2023-11-12
+SKU0221,Stainless_Steel Square 221,square,wood,tortoise,mid,women,SS24,True,SUP008,60.18,231.35,sunglasses,2022-03-27
+SKU0222,Wood Cat Eye 222,round,titanium,black,mid,women,AW24,False,SUP017,62.12,168.39,optical,2022-01-30
+SKU0223,Stainless_Steel Cat Eye 223,oval,wood,navy,premium,women,AW24,False,SUP017,89.1,288.4,optical,2022-10-23
+SKU0224,Aluminium Cat Eye 224,oval,titanium,tortoise,luxury,unisex,AW23,True,SUP015,352.33,920.59,sunglasses,2023-07-30
+SKU0225,Titanium Round 225,rectangle,titanium,navy,budget,women,AW23,True,SUP002,24.36,58.38,optical,2023-10-22
+SKU0226,Titanium Cat Eye 226,oval,titanium,red,luxury,men,AW24,True,SUP012,191.6,755.44,sunglasses,2023-12-24
+SKU0227,Acetate Aviator 227,rectangle,acetate,silver,budget,unisex,AW23,True,SUP016,43.22,117.09,optical,2022-10-30
+SKU0228,Wood Aviator 228,cat_eye,acetate,navy,mid,unisex,AW23,True,SUP024,73.89,249.41,sunglasses,2022-05-29
+SKU0229,Tr90 Oval 229,square,titanium,brown,mid,men,AW24,True,SUP014,93.61,220.37,sunglasses,2022-01-23
+SKU0230,Wood Cat Eye 230,oval,acetate,tortoise,budget,men,AW24,False,SUP009,21.58,71.77,sunglasses,2022-05-08
+SKU0231,Titanium Oversized 231,oval,stainless_steel,clear,budget,unisex,AW24,True,SUP014,36.52,98.14,sunglasses,2022-02-27
+SKU0232,Aluminium Rectangle 232,wayfarer,acetate,gold,mid,women,SS23,True,SUP005,76.36,211.7,sunglasses,2024-01-28
+SKU0233,Acetate Aviator 233,square,acetate,clear,luxury,women,AW24,True,SUP003,254.0,771.49,optical,2022-08-21
+SKU0234,Titanium Wayfarer 234,aviator,aluminium,brown,mid,men,SS23,True,SUP017,78.38,203.32,sunglasses,2023-12-24
+SKU0235,Aluminium Wayfarer 235,rectangle,acetate,tortoise,luxury,women,SS24,False,SUP025,200.54,507.51,sunglasses,2023-04-30
+SKU0236,Titanium Oversized 236,rectangle,acetate,green,premium,women,AW24,True,SUP022,109.84,302.26,optical,2023-04-16
+SKU0237,Wood Wayfarer 237,round,acetate,tortoise,mid,women,SS24,False,SUP015,75.62,188.26,optical,2023-02-05
+SKU0238,Stainless_Steel Rectangle 238,oversized,acetate,navy,premium,unisex,AW24,False,SUP002,129.96,290.94,sunglasses,2023-12-24
+SKU0239,Tr90 Oversized 239,oversized,tr90,red,budget,women,AW23,True,SUP025,20.57,61.61,optical,2022-02-06
+SKU0240,Aluminium Oversized 240,aviator,wood,red,budget,men,AW23,True,SUP012,38.31,108.54,sunglasses,2022-03-20
+SKU0241,Acetate Wayfarer 241,wayfarer,wood,clear,premium,women,AW23,False,SUP008,125.56,497.28,optical,2023-01-08
+SKU0242,Tr90 Aviator 242,wayfarer,tr90,rose_gold,premium,women,AW23,True,SUP023,159.18,388.99,sunglasses,2022-12-11
+SKU0243,Stainless_Steel Wayfarer 243,oversized,acetate,navy,budget,unisex,SS24,True,SUP019,38.5,108.73,optical,2023-04-23
+SKU0244,Aluminium Aviator 244,rectangle,wood,silver,mid,men,AW23,False,SUP019,82.48,248.74,optical,2023-10-08
+SKU0245,Acetate Wayfarer 245,square,acetate,red,mid,unisex,SS24,False,SUP007,37.21,138.41,optical,2023-06-04
+SKU0246,Acetate Rectangle 246,oval,tr90,rose_gold,premium,unisex,AW23,True,SUP025,154.94,362.06,optical,2022-08-14
+SKU0247,Stainless_Steel Oversized 247,oval,stainless_steel,green,mid,men,AW23,True,SUP012,56.27,171.03,optical,2022-10-16
+SKU0248,Titanium Rectangle 248,aviator,aluminium,silver,mid,women,SS23,True,SUP014,50.41,130.41,sunglasses,2023-10-22
+SKU0249,Tr90 Square 249,wayfarer,titanium,green,mid,women,SS24,False,SUP019,61.07,218.19,optical,2022-06-26
+SKU0250,Wood Wayfarer 250,cat_eye,tr90,gold,mid,men,AW24,True,SUP017,78.02,176.39,optical,2023-03-19
+SKU0251,Tr90 Oval 251,round,stainless_steel,green,premium,unisex,AW24,True,SUP005,104.94,367.33,optical,2023-04-16
+SKU0252,Aluminium Rectangle 252,square,tr90,black,premium,men,AW23,True,SUP008,83.4,287.67,sunglasses,2023-10-22
+SKU0253,Tr90 Oval 253,wayfarer,aluminium,tortoise,mid,women,AW23,False,SUP010,60.54,143.52,sunglasses,2023-09-24
+SKU0254,Tr90 Oversized 254,round,wood,silver,budget,women,SS24,False,SUP024,49.09,113.5,optical,2023-02-12
+SKU0255,Acetate Round 255,wayfarer,stainless_steel,rose_gold,budget,unisex,SS24,True,SUP018,15.54,53.13,sunglasses,2022-09-25
+SKU0256,Acetate Aviator 256,wayfarer,stainless_steel,green,premium,unisex,SS23,True,SUP010,106.01,308.21,sunglasses,2022-11-20
+SKU0257,Stainless_Steel Wayfarer 257,wayfarer,wood,silver,premium,women,SS24,False,SUP019,128.14,323.01,sunglasses,2022-12-25
+SKU0258,Stainless_Steel Cat Eye 258,wayfarer,stainless_steel,black,budget,unisex,SS23,False,SUP019,35.89,84.31,optical,2022-07-10
+SKU0259,Tr90 Oversized 259,rectangle,titanium,silver,budget,unisex,SS23,True,SUP010,29.67,91.05,sunglasses,2023-07-02
+SKU0260,Aluminium Cat Eye 260,cat_eye,stainless_steel,rose_gold,mid,unisex,SS24,True,SUP011,65.07,184.13,sunglasses,2022-07-03
+SKU0261,Titanium Oval 261,cat_eye,acetate,navy,budget,men,SS23,True,SUP023,22.26,55.89,sunglasses,2023-07-23
+SKU0262,Acetate Rectangle 262,cat_eye,titanium,brown,premium,men,AW23,True,SUP015,123.19,310.92,optical,2023-10-22
+SKU0263,Stainless_Steel Wayfarer 263,square,stainless_steel,gold,mid,men,SS24,True,SUP004,93.38,229.67,optical,2024-04-28
+SKU0264,Tr90 Round 264,oval,wood,brown,budget,unisex,SS24,True,SUP018,34.44,94.63,sunglasses,2022-04-10
+SKU0265,Titanium Square 265,rectangle,wood,brown,luxury,women,AW23,True,SUP015,258.57,954.4,sunglasses,2023-10-29
+SKU0266,Titanium Square 266,square,titanium,green,budget,women,SS23,False,SUP013,41.75,96.91,optical,2022-03-13
+SKU0267,Acetate Cat Eye 267,square,stainless_steel,navy,budget,men,AW24,True,SUP019,43.75,103.4,sunglasses,2022-10-23
+SKU0268,Wood Wayfarer 268,square,acetate,clear,budget,unisex,AW24,True,SUP023,22.15,54.07,optical,2022-06-05
+SKU0269,Wood Square 269,wayfarer,wood,gold,budget,men,AW24,True,SUP009,20.43,75.66,sunglasses,2022-05-22
+SKU0270,Aluminium Wayfarer 270,oversized,titanium,green,budget,women,SS24,True,SUP011,25.53,87.77,optical,2022-06-05
+SKU0271,Wood Oversized 271,wayfarer,wood,black,budget,men,AW23,True,SUP005,29.38,73.69,sunglasses,2022-02-06
+SKU0272,Wood Wayfarer 272,cat_eye,aluminium,tortoise,budget,unisex,AW24,True,SUP017,27.78,109.11,optical,2023-12-24
+SKU0273,Wood Aviator 273,square,wood,clear,budget,men,AW23,True,SUP011,37.35,83.78,sunglasses,2022-02-20
+SKU0274,Tr90 Cat Eye 274,cat_eye,titanium,rose_gold,mid,men,SS23,True,SUP009,71.57,219.92,optical,2022-12-18
+SKU0275,Tr90 Rectangle 275,wayfarer,aluminium,brown,premium,men,AW24,False,SUP018,182.36,463.0,optical,2023-09-10
+SKU0276,Acetate Rectangle 276,oversized,wood,brown,mid,men,AW23,True,SUP011,79.36,185.62,optical,2024-05-19
+SKU0277,Aluminium Cat Eye 277,aviator,tr90,brown,mid,unisex,AW24,False,SUP012,78.36,238.24,sunglasses,2024-01-21
+SKU0278,Titanium Oversized 278,wayfarer,aluminium,gold,mid,women,AW23,False,SUP012,61.61,196.33,sunglasses,2022-05-01
+SKU0279,Acetate Cat Eye 279,oversized,aluminium,tortoise,premium,men,AW24,False,SUP007,171.96,462.57,optical,2024-05-19
+SKU0280,Tr90 Cat Eye 280,square,acetate,black,premium,men,SS24,True,SUP004,122.73,335.15,optical,2023-07-30
+SKU0281,Aluminium Cat Eye 281,aviator,aluminium,clear,budget,men,AW23,True,SUP021,28.18,84.92,sunglasses,2022-06-05
+SKU0282,Aluminium Aviator 282,oval,wood,gold,budget,men,AW23,True,SUP003,32.29,87.2,sunglasses,2023-01-29
+SKU0283,Wood Rectangle 283,oversized,titanium,navy,budget,unisex,AW24,True,SUP009,25.07,57.35,sunglasses,2024-03-17
+SKU0284,Titanium Wayfarer 284,aviator,titanium,rose_gold,budget,women,SS23,True,SUP017,26.76,77.9,optical,2022-12-11
+SKU0285,Wood Square 285,cat_eye,wood,tortoise,mid,unisex,AW23,False,SUP004,69.23,239.25,optical,2022-06-12
+SKU0286,Tr90 Aviator 286,cat_eye,titanium,rose_gold,mid,men,AW23,True,SUP017,65.74,202.01,optical,2024-02-11
+SKU0287,Tr90 Oversized 287,wayfarer,stainless_steel,black,budget,unisex,SS24,False,SUP019,20.53,62.43,optical,2024-04-21
+SKU0288,Acetate Cat Eye 288,wayfarer,wood,tortoise,mid,unisex,AW23,True,SUP017,45.31,164.05,sunglasses,2024-05-05
+SKU0289,Stainless_Steel Oversized 289,wayfarer,tr90,tortoise,mid,unisex,SS24,True,SUP008,40.95,144.91,sunglasses,2024-04-21
+SKU0290,Titanium Cat Eye 290,wayfarer,aluminium,clear,budget,women,AW23,True,SUP001,20.02,51.74,sunglasses,2024-02-04
+SKU0291,Wood Aviator 291,cat_eye,acetate,navy,premium,men,SS23,True,SUP023,153.18,481.87,optical,2023-02-05
+SKU0292,Wood Oval 292,cat_eye,titanium,red,budget,men,SS23,True,SUP009,35.88,81.37,sunglasses,2022-06-19
+SKU0293,Wood Square 293,wayfarer,aluminium,rose_gold,luxury,women,SS24,True,SUP021,213.66,715.27,sunglasses,2023-06-25
+SKU0294,Wood Oval 294,round,tr90,gold,budget,unisex,AW23,True,SUP005,24.79,91.89,sunglasses,2022-07-10
+SKU0295,Aluminium Cat Eye 295,wayfarer,titanium,brown,premium,men,AW23,True,SUP005,100.91,251.83,sunglasses,2023-02-19
+SKU0296,Stainless_Steel Square 296,oval,titanium,red,luxury,men,SS24,True,SUP020,296.05,694.62,optical,2023-07-30
+SKU0297,Titanium Oval 297,wayfarer,stainless_steel,navy,luxury,men,AW23,False,SUP024,303.21,992.12,sunglasses,2024-04-14
+SKU0298,Wood Square 298,oversized,tr90,black,premium,unisex,AW23,True,SUP022,118.62,408.44,sunglasses,2022-09-11
+SKU0299,Titanium Round 299,rectangle,titanium,silver,premium,women,SS23,True,SUP019,142.27,495.45,optical,2022-08-07
+SKU0300,Stainless_Steel Square 300,oval,tr90,red,mid,unisex,AW23,True,SUP007,71.11,200.65,sunglasses,2023-10-08
